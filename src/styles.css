@@ -1,3 +1,7 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
 	font-family: 'Avenir Next', sans-serif;
 	min-width: 100%;
@@ -5,13 +9,8 @@ body {
 }
 
 footer {
-  bottom: 0;
-  width: 100%;
-  position: absolute;
-  height: $height-footer;
+  position: relative;
+  height: 40vh !important;
   background-color: #f5f5f5;
   text-align: center;
-  /*.footer-block {
-    margin: 20px 0;
-  }*/
 }
