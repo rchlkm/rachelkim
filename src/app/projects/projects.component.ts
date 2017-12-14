@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from '../project';
+import { PROJECTS } from '../list-of-projects';
+
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+	projects = PROJECTS;
+	selectedProject: Project;
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
+
+  onSelect(project: Project): void {
+  		this.selectedProject = project;
+  	}
 
 }
