@@ -1,0 +1,155 @@
+/*
+	RESPONSIVE PORTFOLIO PAGE WITH FILTERING AND HOVER EFFECT
+	https://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import	url('portfolio-grid.css');
+@import	url('portfolio-filter.css');
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  min-width: 300px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*.container { 
+	position: relative; 
+	width: 95%; 
+	margin: 0 auto; 
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;	
+}
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+div{
+  height: 200px;
+  width: 33.33%;
+  width: calc(100% / 3);
+  display: inline-block;
+}
+
+div:first-of-type{background-color: red}
+div:nth-of-type(2){background-color: blue}
+div:nth-of-type(3){background-color: green}
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+	OVERLAY HOVER EFFECTS
+	http://kevinjannis.github.io/hovereffects.css/#
+*/
+
+.effect {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-perspective: 400;
+  -moz-perspective: 400;
+  -ms-perspective: 400;
+  -o-perspective: 400;
+  perspective: 400;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1em;
+  backface-visibility: hidden;
+}
+	.effect:before, .effect:after {
+	  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	  opacity: 0;
+	  -webkit-transform-origin: center center 0 50%;
+	  -moz-transform-origin: center center 0 50%;
+	  -ms-transform-origin: center center 0 50%;
+	  -o-transform-origin: center center 0 50%;
+	  transform-origin: center center 0 50%;
+	  -webkit-transition: all 0.2s ease-out;
+	  -moz-transition: all 0.2s ease-out;
+	  -o-transition: all 0.2s ease-out;
+	  transition: all 0.2s ease-out;
+	  position: absolute;
+	  content: attr(data-effect);
+	  backface-visibility: hidden;
+	  top: 0;
+	  left: 0;
+	  color: rgba(255, 255, 255, 0.9);
+	}
+
+
+	.effect.background-left {
+	  color: transparent;
+	}
+	.effect.background-left:before {
+	  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	  /*opacity: 1;*/
+	  color: rgba(0, 0, 0, 0.5);
+	  z-index: 1;
+	}
+	.effect.background-left:after {
+	  /*background: rgba(255, 255, 255, 0.9);*/
+	  background: rgba(0,0,0, 0.5);
+	  /*background: black;*/
+	  color: transparent;
+	  top: -10%;
+	  /*left: -10%;*/
+	  left: -1%;
+	  width: 0%;
+	  height: 120%;
+	  overflow: hidden;
+	}
+	.effect.background-left:hover:after {
+	  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	  opacity: 1;
+	  width: 120%;
+	  z-index: 0;
+	}
+

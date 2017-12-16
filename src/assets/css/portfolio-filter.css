@@ -1,0 +1,294 @@
+.container { 
+	position: relative; 
+	width: 80%; /* 960px */
+	min-width: 300px;
+	margin: 0 auto; 
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;	
+}
+
+
+
+#filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+}
+
+	#filters li {
+		float:left;
+	}
+	
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+	
+	#filters li span.active {
+		text-decoration: underline;
+		/*background: #e95a44;*/
+		/*color:#fff;*/
+	}
+ 
+
+ 
+#portfoliolist .portfolio.square {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	
+	/*  DEFAULT: show 3 items per row */
+	width:30%; 
+	margin:1.5%;
+
+	position: relative;
+	display:none;
+
+	/*display: inline-block;*/
+	float:left;
+	overflow:hidden;
+	cursor:pointer;
+
+
+	background: #363795; /* fallback for old browsers */
+	background: -webkit-linear-gradient(#363795, #005c97); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient #363795, #005c97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+	.portfolio-content.square-content {
+		color: white;
+	}
+	
+
+
+
+/*  SMALLER DESKTOP / BIGGER TABLET (3 items per row) with smaller margins */
+@media only screen and (min-width: 900px) and (max-width: 1200px) {  
+	.container {
+		width: 90%;
+	}
+}
+	/* TABLET (2 items per row) */
+	@media only screen and (max-width: 900px) {
+		.container { 
+			width: 95%; 
+		}
+		
+		#portfoliolist .portfolio.square {
+			width:48%;
+			margin:1%;		
+		}				
+	}
+
+	/*  TABLET (2 items per row) with bigger margins */
+	@media only screen and (min-width: 700px) and (max-width: 900px) {
+		.container {
+			width: 85%;
+		}
+		
+	}
+	/* @media only screen and (min-width: 800px) and (max-width: 900px) {	}
+	*/
+
+	/* MOBILE PHONE (1 item per row) */
+	@media only screen and (max-width: 414px) {
+		.container { 
+			width: 95%; 
+		}
+		
+		#portfoliolist .portfolio.square {
+			width: 98%;
+			margin: 1%;
+		}			
+	}
+
+
+
+/* 
+	Clearing 
+*/
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0; 
+}
+
+.row:after,
+.clearfix:after {
+	clear: both; 
+}
+
+.row,
+.clearfix {
+	zoom: 1; 
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+
+
+
+.portfolio-title {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	letter-spacing: 0.15em;
+
+	opacity: 1;
+	-webkit-transition: all 0.8s ease-in-out 0s;
+	-moz-transition: all 0.8s ease-in-out 0s;
+	transition: all 0.8s ease-in-out 0s;
+}
+
+	.portfolio-content:hover .portfolio-title {
+	  opacity: 0;
+	}
+
+
+
+.portfolio-content .content-overlay {
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transition: all 0.6s ease-in-out 0s;
+	-moz-transition: all 0.6s ease-in-out 0s;
+	transition: all 0.6s ease-in-out 0s;
+
+	transition: all 0.4s ease-in-out 0s;
+}
+
+	.portfolio-content:hover .content-overlay{
+	  opacity: 1;
+	}
+
+
+
+
+.overlay-details {
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+
+	margin: auto 0;
+	padding: 0 10%;
+
+	height: 100%;
+	width: 100%;
+
+	top: 50%;
+	left: 50%;
+
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	-webkit-transition: all 0.6s ease-in-out 0s;
+	-moz-transition: all 0.6s ease-in-out 0s;
+	transition: all .6s ease-in-out 0s;
+
+	transition: all .4s ease-in-out 0s;
+}
+
+	.portfolio-content:hover .overlay-details{
+		top: 50%;
+		left: 50%;
+		opacity: 1;
+	}
+
+
+	.overlay-status {
+		margin: 10% 0;
+		text-transform: uppercase;
+	}
+
+	.overlay-title {
+		margin: 10% 0;
+	}
+
+		.overlay-title h2 {
+			color: #fff;
+			font-weight: 500;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+
+
+			border-bottom: 1px solid #FFF;
+			border-top: 1px solid #FFF;
+			padding: 10%;
+		}
+
+	.overlay-description {
+		margin: 10% 0;
+	/*	margin: 10% 0;
+		padding: 0 10%;
+		width: 100%;*/
+	}
+
+		.overlay-description p{
+		  color: #fff;
+		  /*font-size: 0.8em;*/
+		}
+
+
+
+	.overlay-tools {
+		margin: 10% auto;
+	}
+
+		.tool {
+			display: inline-block;
+			margin: 1%;
+			width: 15%;
+
+		    text-align: center;
+		    border: 1px white solid;
+		    background-color: rgba(0,0,0,0.5);
+		    /*background-color: red;*/
+		    position: relative;
+		}
+/*
+		.tool {
+			display: inline-block;
+			margin: 1%;
+			width: 15%;
+
+		    text-align: center;
+		    border: 1px white solid;
+		    background-color: rgba(0,0,0,0.5);
+		    position: relative;
+		}
+
+		*/
+		.tool:before{
+			content: "";
+			display: block;
+			padding-top: 100%; 
+		}
+
+

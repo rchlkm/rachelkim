@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Create A Simple Responsive Portfolio Page with Filtering and Hover Effect</title>
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<link rel="stylesheet" href="css/portfolio-styles.css">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> -->
+
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+		$(function () {
+			
+			var filterList = {
+			
+				init: function () {
+					// MixItUp plugin
+					// http://mixitup.io
+					$('#portfoliolist').mixItUp({
+	  				selectors: {
+	    			  target: '.portfolio',
+	    			  filter: '.filter'	
+	    		  },
+	    		  load: {
+	      		  filter: ".web, .data, .misc"
+	      		}     
+					});										
+				}
+			};
+			
+			// Run the show!
+			filterList.init();
+		});	
+	</script>
+
+</head>
+
+<body>
+	<div class="container">
+
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter=".web, .data, .misc">all</span></li>
+			<li><span class="filter" data-filter=".web">web</span></li>
+			<li><span class="filter" data-filter=".data">data</span></li>
+			<!-- <li><span class="filter effect background-left" data-filter=".misc" data-effect="miscellaneous">miscellaneous</span></li> -->
+			<li><span class="filter" data-filter=".misc">miscellaneous</span></li>
+
+		</ul>
+
+
+
+		<div id="portfoliolist">
+
+
+			<div class="portfolio square misc" data-cat="misc" onClick="window.open('http://www.google.com','_self');">
+				<div class="portfolio-content square-content">
+						
+						<div class="portfolio-title">
+							<h1>A&M Chess Store</h1>
+						</div>
+						<!--  -->
+
+						<div class="content-overlay"></div>
+
+						<div class="overlay-details fadeIn-left">
+							<div class="overlay-status">
+								coming soon!
+							</div>
+							<div class="overlay-title">
+								<h2>A&M Chess</h2>
+							</div>
+							<div class="overlay-description">
+								<p>eCommerce web app</p>
+							</div>
+							<div class="overlay-tools">
+								<div class="tool"></div>
+								<div class="tool"></div>
+								<div class="tool"></div>
+								
+							</div>
+	        		
+						</div>
+
+				</div>	
+			</div>
+
+
+
+
+			<div class="portfolio square data" data-cat="data" onClick="window.open('http://www.google.com','_self');">
+				<div class="portfolio-content square-content">
+						
+						<div class="portfolio-title">
+							<h2>DATA</h2>
+						</div>
+						<!--  -->
+
+						<div class="content-overlay"></div>
+
+						<div class="overlay-details fadeIn-left">
+							<div class="overlay-status">
+								coming soon!
+							</div>
+							<div class="overlay-title">
+								<h2>DATA</h2>
+							</div>
+							<div class="overlay-description">
+								<p>eCommerce web app</p>
+							</div>
+							<div class="overlay-tools">
+								<div class="tool"></div>
+								<div class="tool"></div>
+								<div class="tool"></div>
+							</div>
+	        		
+						</div>
+
+				</div>	
+			</div>
+
+			<div class="portfolio square misc" data-cat="misc" onClick="window.open('http://www.google.com','_self');">
+				<div class="portfolio-content square-content">
+						
+						<div class="portfolio-title">
+							<h2>MISC</h2>
+						</div>
+						<!--  -->
+
+						<div class="content-overlay"></div>
+
+						<div class="overlay-details fadeIn-left">
+							<div class="overlay-status">
+								coming soon!
+							</div>
+							<div class="overlay-title">
+								<h2>MISC</h2>
+							</div>
+							<div class="overlay-description">
+								<p>eCommerce web app</p>
+							</div>
+							<div class="overlay-tools">
+								<div class="tool"></div>
+								<div class="tool"></div>
+								<div class="tool"></div>
+							</div>
+	        		
+						</div>
+
+				</div>	
+			</div>
+
+			<div class="portfolio square web" data-cat="web" onClick="window.open('http://www.google.com','_self');">
+				<div class="portfolio-content square-content">
+						
+						<div class="portfolio-title">
+							<h2>WEB</h2>
+						</div>
+						<!--  -->
+
+						<div class="content-overlay"></div>
+
+						<div class="overlay-details fadeIn-left">
+							<div class="overlay-status">
+								coming soon!
+							</div>
+							<div class="overlay-title">
+								<h2>WEB</h2>
+							</div>
+							<div class="overlay-description">
+								<p>eCommerce web app</p>
+							</div>
+							<div class="overlay-tools">
+								<div class="tool square"></div>
+								<div class="tool square"></div>
+								<div class="tool square"></div>
+							</div>
+	        		
+						</div>
+
+				</div>	
+			</div>
+
+
+
+
+
+
+								
+			
+		</div>
+		
+	</div><!-- container -->
+
+  <div class="square">
+		<div class="square-content center">
+			Aspect ratio 1:1
+		</div>
+	</div>
+
+	<div class="square">
+		<div class="square-content center">
+			Aspect ratio 1:1
+		</div>
+	</div>
+  
+
+</body>
+</html>

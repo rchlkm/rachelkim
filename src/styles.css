@@ -1,3 +1,5 @@
+/*../src/stylesheets/hovereffects.css*/
+
 html {
   position: relative;
   min-height: 100%;
@@ -10,7 +12,7 @@ body {
 
 footer {
   position: relative;
-  height: 40vh !important;
+  height: 50vh !important;
   background-color: #f5f5f5;
-  text-align: center;
+  /*text-align: center;*/
 }
