@@ -150,18 +150,28 @@
 
 .portfolio-title {
 	margin: 0;
+	width: 80%;
+	
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	letter-spacing: 0.15em;
 
 	opacity: 1;
 	-webkit-transition: all 0.8s ease-in-out 0s;
 	-moz-transition: all 0.8s ease-in-out 0s;
-	transition: all 0.8s ease-in-out 0s;
+	transition: all .4s ease-in-out 0s;
+	
 }
+
+	.portfolio-title h2 {
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		font-size: 1.5em;
+		text-align: center;
+		line-height: 1.5em;
+	}
 
 	.portfolio-content:hover .portfolio-title {
 	  opacity: 0;
@@ -173,14 +183,13 @@
 	background: rgba(0,0,0,0.2);
 	position: absolute;
 	height: 100%;
+
 	width: 100%;
 	bottom: 0;
 	opacity: 0;
 	-webkit-transition: all 0.6s ease-in-out 0s;
 	-moz-transition: all 0.6s ease-in-out 0s;
 	transition: all 0.6s ease-in-out 0s;
-
-	transition: all 0.4s ease-in-out 0s;
 }
 
 	.portfolio-content:hover .content-overlay{
@@ -198,7 +207,7 @@
 	margin: auto 0;
 	padding: 0 10%;
 
-	height: 100%;
+	/*height: 100%;*/
 	width: 100%;
 
 	top: 50%;
@@ -214,6 +223,13 @@
 
 	transition: all .4s ease-in-out 0s;
 }
+	.overlay-details.coming-soon {
+		cursor:not-allowed;
+	}
+/*	.overlay-details.coming-soon:first-child {
+		border: 1px solid blue;
+		content: "Coming soon";
+	}*/
 
 	.portfolio-content:hover .overlay-details{
 		top: 50%;
@@ -224,71 +240,72 @@
 
 	.overlay-status {
 		margin: 10% 0;
+		height: .75em;
+		font-size: .75em;
 		text-transform: uppercase;
 	}
+		.coming-soon > .overlay-status p:before {
+			content: "coming soon"
+		}
+
+/*		.overlay-status p:before,
+		.overlay-status p:after {
+			content: " - "
+		}
+*/
 
 	.overlay-title {
 		margin: 10% 0;
+		border-bottom: 1px solid #FFF;
+		border-top: 1px solid #FFF;
+		padding: 1em 0;
+	
+		
+	    overflow: hidden;
+
 	}
 
 		.overlay-title h2 {
 			color: #fff;
+			font-size: 1.5em;
 			font-weight: 500;
+
 			letter-spacing: 0.15em;
 			text-transform: uppercase;
-
-
-			border-bottom: 1px solid #FFF;
-			border-top: 1px solid #FFF;
-			padding: 10%;
+			
 		}
 
 	.overlay-description {
-		margin: 10% 0;
-	/*	margin: 10% 0;
-		padding: 0 10%;
-		width: 100%;*/
+		margin: 10% 0 5% 0;
+		max-height: 2em;
+		overflow: hidden;
+		border: 1px solid transparent;
+		vertical-align: center;
 	}
 
 		.overlay-description p{
 		  color: #fff;
-		  /*font-size: 0.8em;*/
+		  font-size: 0.8em;
+
 		}
 
 
 
 	.overlay-tools {
-		margin: 10% auto;
+		line-height: 1em;
 	}
 
 		.tool {
-			display: inline-block;
-			margin: 1%;
-			width: 15%;
-
-		    text-align: center;
-		    border: 1px white solid;
-		    background-color: rgba(0,0,0,0.5);
-		    /*background-color: red;*/
-		    position: relative;
-		}
-/*
-		.tool {
-			display: inline-block;
-			margin: 1%;
-			width: 15%;
-
-		    text-align: center;
-		    border: 1px white solid;
-		    background-color: rgba(0,0,0,0.5);
-		    position: relative;
+			width: 18%;
+			margin: .5%;
+			
+		    /*border: 1px white solid;*/
+		    /*background-color: rgba(0,0,0,0.4);*/
+		    background-color: transparent;
 		}
 
-		*/
-		.tool:before{
-			content: "";
-			display: block;
-			padding-top: 100%; 
+		.tool img {
+			width: 100%;
+			heigh: 100%;
 		}
-
 
