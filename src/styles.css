@@ -1,18 +1,112 @@
-/*../src/stylesheets/hovereffects.css*/
+@import url('assets/css/grid.css');
+@import url('assets/css/navbar.css');
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 html {
-  position: relative;
-  min-height: 100%;
+	overflow-y: scroll;
+	min-width: 300px;
+
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+
+	position: relative;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: transparent;
 }
+
+a {
+  text-decoration: none;
+}
+
 body {
-	font-family: 'Avenir Next', sans-serif;
-	min-width: 100%;
-	max-width: 100%;
+	margin: 0;
+	font-family: 'Raleway', 'Avenir Next', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	background-color: #fff;
+
+}
+
+html, body {
+		height: 100%;
+}
+
+main .container {
+	min-height: 50vh;
 }
 
 footer {
-  position: relative;
-  height: 50vh !important;
-  background-color: #f5f5f5;
-  /*text-align: center;*/
+	border: 1px solid transparent;
+	background-color: #f5f5f5;	
+	z-index:-9999; /* sticky footer */
+	min-height: 40vh;
 }
+
+
+footer .footer-main {
+	height: 80%;
+}
+
+footer .footer-copyright {
+  overflow: hidden;
+  height: 20%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  
+  background-color: rgba(51, 51, 51, 0.08);
+}
+
+.footer-copyright .container {
+	margin: 0 auto;
+	padding: 1rem 0;
+}
+/*
+nav {
+	height: 10vh;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	background-color: #f5f5f5;	
+
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}*/
+
+nav .container {
+	margin: 0 auto;
+}
+
+.collapse {
+  display: none;
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+
