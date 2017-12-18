@@ -20,6 +20,15 @@ export const PROJECTS: Project[] = [
     tools: ["Pandas", "Tableau"]
   },
 
+  {
+    id: 1,
+    title: "Case Study: Airbnb",
+    category: "data",
+    duration: "March 2017",
+    description: "wrangled data using Pandas to understand trends of Airbnb listings",
+    tools: ["Pandas", "Tableau"]
+  },
+
   // {
   //   id: ,
   //   title: "",

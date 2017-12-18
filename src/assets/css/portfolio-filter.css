@@ -10,9 +10,9 @@
 }
 
 
-
 #filters {
 	margin:1%;
+	margin-left: -1.5%;
 	padding:0;
 	list-style:none;
 }
@@ -34,7 +34,11 @@
 	}
  
 
- 
+
+#portfoliolist {
+	margin: 0 -2.5% 0 -1.5%;
+} 
+
 #portfoliolist .portfolio.square {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -273,6 +277,14 @@
 			width: 95%; 
 		}
 		
+		#filters {
+			margin-left: -2.5%;
+		}
+
+		#portfoliolist {
+			margin: 0 -1.25%;
+		} 
+
 		#portfoliolist .portfolio.square {
 			width:48%;
 			margin:1%;		
@@ -320,7 +332,12 @@
 		.container { 
 			width: 95%; 
 		}
-		
+		#filters {
+			margin-left: -1.15%;
+		}
+		#portfoliolist {
+			margin: 0 -1.15%;
+		} 
 		#portfoliolist .portfolio.square {
 			width: 98%;
 			margin: 1%;
