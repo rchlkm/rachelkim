@@ -16,12 +16,12 @@
   display: flex;
   min-height: 3.25rem;
 }
-/*
+
 .navbar.has-shadow {
   -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
           box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
 }
-*/
+
 .navbar-brand {
   -webkit-overflow-scrolling: touch;
   -webkit-box-align: stretch;
@@ -310,8 +310,8 @@ a.navbar-item:hover, a.navbar-item.is-active,
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top: 1px solid #dbdbdb;
-/*    -webkit-box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
-            box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);*/
+    -webkit-box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+            box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
     display: none;
     font-size: 0.875rem;
     left: 0;
@@ -338,8 +338,8 @@ a.navbar-item:hover, a.navbar-item.is-active,
   .navbar-dropdown.is-boxed {
     border-radius: 5px;
     border-top: none;
-/*    -webkit-box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-            box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);*/
+    -webkit-box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+            box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     display: block;
     opacity: 0;
     pointer-events: none;
