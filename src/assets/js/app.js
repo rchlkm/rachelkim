@@ -74,3 +74,24 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+
+
+
+
+
+
+
+// // CHANGE COLORS OF THE PORTFOLIO SQUARES
+// $(function () {
+//   var hexArray = ['#3498db','#9b59b6','#2ecc71', '#e67e22', '#e74c3c', '#34495e']
+//   var randomColor = hexArray[Math.floor(Math.random() * hexArray.length)];
+
+//   $("#portfoliolist .portfolio.square").css("background",randomColor);
+//   console.log(randomColor);
+
+// });
+
+
+
+
+

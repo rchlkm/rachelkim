@@ -12,7 +12,7 @@
 
   <div *ngFor="let project of projects">
 
-        <div class="portfolio square {{project.category}}" onClick="window.open('http://www.google.com','_self');">
+        <div class="portfolio square {{project.category}} {{project.color}}" onClick="window.open('http://www.google.com','_self');">
         <div class="portfolio-content square-content">
             
             <div class="portfolio-title">
@@ -21,7 +21,7 @@
 
             <div class="content-overlay"></div>
 
-            <div class="overlay-details">
+            <div class="overlay-details {{project.status}}">
               <div class="overlay-status">
                 <p>{{project.duration}}</p>
               </div>

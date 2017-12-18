@@ -4,49 +4,120 @@ export const PROJECTS: Project[] = [
 
   {
     id: 0,
+    title: "Jemasen",
+    category: "web data",
+    status: "coming-soon",
+    duration: "",
+    role: "Lead Developer, Data Analyst",
+    description: "developing and maintaining data visualization dashboard",
+    tools: ["MongoDB", "D3", "Flask"],
+    color: "navy",
+  },
+
+  {
+    id: 1,
     title: "A&M Chess Store",
     category: "web",
+    status: "done",
     duration: "Spring 2017",
+    role: "Full-Stack Developer",
     description: "eCommerce web app using ruby on rails",
-    tools: ["Ruby on Rails", "HTML5", "CSS3"]
+    tools: ["Ruby on Rails", "HTML5", "CSS3"],
+    color: "red",
   },
 
   {
-    id: 1,
+    id: 2,
     title: "Case Study: Airbnb",
     category: "data",
+    status: "done",
     duration: "March 2017",
+    role: "Data Analyst",
     description: "wrangled data using Pandas to understand trends of Airbnb listings",
-    tools: ["Pandas", "Tableau"]
+    tools: ["Pandas", "Tableau"],
+    color: "light-blue",
   },
 
   {
-    id: 1,
-    title: "Case Study: Airbnb",
+    id: 3,
+    title: "ASA Booth",
+    category: "misc",
+    status: "done",
+    duration: "Sept 2016 - April 2017",
+    role: "Booth Chair",
+    description: "designed and built a 2 story building",
+    tools: [],
+    color: "light-blue",
+  },
+
+  {
+    id: 4,
+    title: "Big Historical Data",
     category: "data",
-    duration: "March 2017",
-    description: "wrangled data using Pandas to understand trends of Airbnb listings",
-    tools: ["Pandas", "Tableau"]
+    status: "done",
+    duration: "Spring 2017",
+    role: "Data Analyst, Full-Stack Developer",
+    description: "digital humanities - analyzed corpus historical data",
+    tools: ["Pandas", "NLTK", "Ruby on Rails"],
+    color: "navy",
+  },
+
+
+  {
+    id: 5,
+    title: "Thin Ice",
+    category: "misc",
+    status: "done",
+    duration: "Dec 2015",
+    role: "Game Developer",
+    description: "developed a maze game using machine learning technqiues to randomize levels",
+    tools: ["Python", "PyGame"],
+    color: "red"
+  },
+
+  {
+    id: 6,
+    title: "Predicting Flight Delays",
+    category: "data",
+    status: "done",
+    duration: "May 2017",
+    role: "Data Scientist",
+    description: "created machines learning tests",
+    tools: ["Pandas"],
+    color: "red"
+  },
+
+  {
+    id: 5,
+    title: "Prantls",
+    category: "web",
+    status: "done",
+    duration: "March 2016",
+    role: "Front-End Developer",
+    description: "my first web development project",
+    tools: ["HTML5", "CSS3"],
+    color: "light-blue"
+  },
+
+  {
+    id: 7,
+    title: "sjark consulting",
+    category: "web",
+    status: "done",
+    duration: "April 2016",
+    role: "Product Manager, Front-End Developer",
+    description: "technical case study with a dashboard",
+    tools: ["HTML5", "CSS3"],
+    color: "navy"
   },
 
   // {
   //   id: ,
   //   title: "",
   //   duration: "",
+  //   role: "",
   //   description: "",
   //   tools: []
   // },
-
-
-  // { id: 11, title: 'Mr. Nice' },
-  // { id: 12, name: 'Narco' },
-  // { id: 13, name: 'Bombasto' },
-  // { id: 14, name: 'Celeritas' },
-  // { id: 15, name: 'Magneta' },
-  // { id: 16, name: 'RubberMan' },
-  // { id: 17, name: 'Dynama' },
-  // { id: 18, name: 'Dr IQ' },
-  // { id: 19, name: 'Magma' },
-  // { id: 20, name: 'Tornado' }
 
 ];

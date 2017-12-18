@@ -1,0 +1,72 @@
+/* https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/ */
+/*https://line25.com/inspiration/flat-design-color-palettes*/
+.warm-flame {
+	background: #ff9a9e !important; /* fallback for old browsers */
+	background: -webkit-linear-gradient(#ff9a9e, #fad0c4) !important; /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(#ff9a9e, #fad0c4) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*
+.yellow {
+	background:rgb(225, 232, 0) !important;
+}
+
+.light-blue {
+	background: rgb(20, 162, 212) !important;
+}
+
+.purple {
+	background: rgb(175, 94, 156) !important;
+}
+
+.green {
+	background: rgb(0, 177, 106) !important;
+}
+
+.orange {
+	background: rgb(247, 148, 30) !important;
+}
+
+.blue {
+	background: rgb(0, 82, 156) !important;
+}
+
+.red {
+	background: rgb(231, 76, 60) !important;
+}
+*/
+
+
+.navy {
+	background: rgb(44,62,79) !important;
+}
+
+.red {
+	background: rgb(229,77,66) !important;
+}
+
+.light-blue {
+	background: rgb(58,153,217) !important;
+}
+
+
+/*.red {
+	background: rgb !important;
+}
+
+.red {
+	background: rgb !important;
+}
+
+*/
+
+
+/*kashmire (puprle)
+#614385, #516395*/
+
+/*green-beach
+#02aab0, #00cdac
+*/
+
+/*borboun (peach) 
+#ec6f66, #f3a183*/

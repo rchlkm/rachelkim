@@ -2,6 +2,7 @@
 @import url('assets/css/navbar.css');
 @import	url('assets/css/portfolio-grid.css');
 @import	url('assets/css/portfolio-filter.css');
+@import	url('assets/css/colors.css');
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 *, *:before, *:after{
@@ -40,7 +41,6 @@ body {
 	top: 0;
 	overflow-y: hidden;
 }
-
 
 
 .navbar {
