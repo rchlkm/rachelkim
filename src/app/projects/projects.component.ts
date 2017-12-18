@@ -14,8 +14,6 @@ export class ProjectsComponent implements OnInit {
 
 	projects = PROJECTS;
 
-  
-	// selectedProject: Project;
 
   constructor() { 
     // console.log("projects", this.projects);
