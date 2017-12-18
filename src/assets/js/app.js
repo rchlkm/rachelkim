@@ -1,3 +1,27 @@
+// PORTFOLIO MIXITUP
+$(function () {
+  
+  var filterList = {
+  
+    init: function () {
+      // MixItUp plugin
+      // http://mixitup.io
+      $('#portfoliolist').mixItUp({
+        selectors: {
+          target: '.portfolio',
+          filter: '.filter' 
+        },
+        load: {
+          filter: ".web, .data, .misc"
+        }     
+      });                   
+    }
+  };
+  
+  // Run the show!
+  filterList.init();
+}); 
+
 // STICKY NAVBAR
 $(document).ready(function() {
       // grab the initial top offset of the navigation 

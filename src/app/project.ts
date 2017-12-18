@@ -1,5 +1,9 @@
 export class Project {
 	id: number;
-	name: string;
-	// description: string;
+	title: string;
+	category: string;
+	duration: string;
+	description: string;
+	// tools: array;
+	tools: {};
 }

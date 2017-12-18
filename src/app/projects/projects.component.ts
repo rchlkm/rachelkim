@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from '../project';
+
 import { PROJECTS } from '../list-of-projects';
+import { Project } from '../project';
 
 
 @Component({
@@ -8,17 +9,22 @@ import { PROJECTS } from '../list-of-projects';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
+
 export class ProjectsComponent implements OnInit {
 
 	projects = PROJECTS;
-	selectedProject: Project;
 
-  constructor() { }
+  
+	// selectedProject: Project;
+
+  constructor() { 
+    // console.log("projects", this.projects);
+  }
 
   ngOnInit() { }
 
-  onSelect(project: Project): void {
-  		this.selectedProject = project;
-  	}
+  // onSelect(project: Project): void {
+  // 		this.selectedProject = project;
+  // 	}
 
 }

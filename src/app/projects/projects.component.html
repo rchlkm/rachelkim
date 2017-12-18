@@ -1,11 +1,70 @@
+<ul id="filters" class="clearfix">
+    <li><span class="filter active" data-filter=".web, .data, .misc">all</span></li>
+    <li><span class="filter" data-filter=".web">web</span></li>
+    <li><span class="filter" data-filter=".data">data</span></li>
+    <li><span class="filter" data-filter=".misc">miscellaneous</span></li>
+
+</ul>
+
+<div id="portfoliolist">
+
+  <div *ngFor="let project of projects">
+
+        <div class="portfolio square {{project.category}}" onClick="window.open('http://www.google.com','_self');">
+        <div class="portfolio-content square-content">
+            
+            <div class="portfolio-title">
+              <h2>{{project.title}}</h2>
+            </div>
+
+            <div class="content-overlay"></div>
+
+            <div class="overlay-details">
+              <div class="overlay-status">
+                <p>{{project.duration}}</p>
+              </div>
+              <div class="overlay-title">
+                <h2>{{project.title}}</h2>
+              </div>
+              <div class="overlay-description">
+                <p>{{project.description}}</p>
+              </div>
+
+              <div class="overlay-tools">
+                <!-- <div *ngFor="let tool of {{project.tools}}"> -->
+                  <div class="tool square">
+                    <img class="square-content" src="../assets/img/tools/angular.png">
+                  </div>
+                <!-- </div> -->
+              </div>
+              
+            </div>
+
+        </div>  
+      </div>
+
+
+  </div>
+
+</div>
+
+
+
+  
+
+<!-- 
 <h2>Projects</h2>
 <ul class="projects">
   <li *ngFor="let project of projects"
     [class.selected]="project === selectedProject"
     (click)="onSelect(project)">
-    <span class="badge">{{project.id}}</span> {{project.name}}
+
+    <ul>
+      <li><span class="badge">{{project.id}}</span> {{project.title}}</li>
+      <li>{{project.description}}</li>
+    </ul>
   </li>
-</ul>
+</ul> -->
 
 <!-- 
 <div *ngIf="selectedProject">
@@ -19,3 +78,38 @@
   </div>
 
 </div> -->
+
+
+<!-- 
+
+  <div class="portfolio square misc" data-cat="misc" onClick="window.open('http://www.google.com','_self');">
+        <div class="portfolio-content square-content">
+            
+            <div class="portfolio-title">
+              <h2>{{project.title}}</h2>
+            </div>
+
+            <div class="content-overlay"></div>
+
+            <div class="overlay-details">
+              <div class="overlay-status">
+                <p>{{project.duration}}</p>
+              </div>
+              <div class="overlay-title">
+                <h2>{{project.title}}</h2>
+              </div>
+              <div class="overlay-description">
+                <p>{{project.description}}</p>
+              </div>
+
+              <div class="overlay-tools">
+                <div class="tool square">
+                </div>
+                <div class="tool square">
+                </div>
+              </div>
+              
+            </div>
+
+        </div>  
+      </div> -->
