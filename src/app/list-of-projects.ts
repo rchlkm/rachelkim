@@ -75,17 +75,17 @@ export const PROJECTS: Project[] = [
     color: "red"
   },
 
-  {
-    id: 6,
-    title: "Predicting Flight Delays",
-    category: "data",
-    status: "done",
-    duration: "May 2017",
-    role: "Data Scientist",
-    description: "created machines learning tests",
-    tools: ["Pandas"],
-    color: "red"
-  },
+  // {
+  //   id: 6,
+  //   title: "Predicting Flight Delays",
+  //   category: "data",
+  //   status: "done",
+  //   duration: "May 2017",
+  //   role: "Data Scientist",
+  //   description: "created machines learning tests",
+  //   tools: ["Pandas"],
+  //   color: "red"
+  // },
 
   {
     id: 5,

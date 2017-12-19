@@ -3,80 +3,8 @@
 	https://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect
 */
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
 @import	url('portfolio-grid.css');
 @import	url('portfolio-filter.css');
-
-*, *:before, *:after{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  box-sizing: border-box;
-}
-
-html {
-  overflow-y: scroll;
-  min-width: 300px;
-  font-family: 'Raleway', sans-serif;
-}
-
-/*.container { 
-	position: relative; 
-	width: 95%; 
-	margin: 0 auto; 
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;	
-}
-
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-div{
-  height: 200px;
-  width: 33.33%;
-  width: calc(100% / 3);
-  display: inline-block;
-}
-
-div:first-of-type{background-color: red}
-div:nth-of-type(2){background-color: blue}
-div:nth-of-type(3){background-color: green}
-
-*/
-
-
-
-
-
-
-
 
 
 /*

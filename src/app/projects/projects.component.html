@@ -1,18 +1,25 @@
-<h1>Projects</h1>
+<div class="title">
+  <h1>Projects</h1>
+</div>
 
-<ul id="filters" class="clearfix">
-    <li><span class="filter active" data-filter=".web, .data, .misc">all</span></li>
-    <li><span class="filter" data-filter=".web">web</span></li>
-    <li><span class="filter" data-filter=".data">data</span></li>
-    <li><span class="filter" data-filter=".misc">miscellaneous</span></li>
+<div id="filterList">
+  <ul id="filters" class="clearfix">
+      <li><span class="filter #portfoliolist .portfolio.square" data-filter=".web, .data, .misc">all</span></li>
+      <li><span class="filter" data-filter=".fav">favorites</span></li>
+      <li><span class="filter" data-filter=".web">web</span></li>
+      <li><span class="filter" data-filter=".data">data</span></li>
+      <li><span class="filter" data-filter=".misc">miscellaneous</span></li>
 
-</ul>
+  </ul>
+</div>
 
 <div id="portfoliolist">
 
   <div *ngFor="let project of projects">
 
-        <div class="portfolio square {{project.category}} {{project.color}}" onClick="window.open('http://www.google.com','_self');">
+        <!-- {{project.color}} -->
+        <!-- <div class="portfolio square {{project.category}}" onClick="window.open('http://www.google.com','_self');"> -->
+      <div class="portfolio square {{project.category}}">
         <div class="portfolio-content square-content">
             
             <div class="portfolio-title">
