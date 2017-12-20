@@ -20,7 +20,8 @@ nav a {
 }
 
 	.navbar-burger:hover {
-	  background-color: var(--magenta) !important;
+	  /*background-color: var(--magenta) !important;*/
+	  background-color: #E1236E !important;
 	}
 
 

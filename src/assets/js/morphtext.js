@@ -3,6 +3,7 @@ $(".js-rotating").Morphext({
     speed: 4000,
     complete: function () {
         // console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
+        console.log("js is rotating");
     }
 });
 
@@ -14,4 +15,6 @@ $(".js-fade").Morphext({
     }
 });
 
-console.log("morphtext is working!");
+console.log("morphtext.js is loaded!");
+
+// <!-- <h2>I am a <span class="js-fade">developer, designer, strategist</span></h2> -->

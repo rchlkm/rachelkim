@@ -1,4 +1,5 @@
 @import url('assets/css/grid.css');
+@import url('assets/css/landingPage.css');
 @import url('assets/css/navbar.css');
 @import	url('assets/css/portfolio-grid.css');
 @import	url('assets/css/portfolio-filter.css');
@@ -141,6 +142,7 @@ nav, footer {
 
 
 nav {
+	border-top: 5px var(--magenta) solid;
 	/*border-bottom: 5px solid var(--magenta) !important;*/
 }
 
