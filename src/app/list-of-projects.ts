@@ -5,7 +5,7 @@ export const PROJECTS: Project[] = [
   {
     id: 0,
     title: "Jemasen",
-    category: "web data",
+    category: "web data fav",
     status: "coming-soon",
     duration: "",
     role: "Lead Developer, Data Analyst",
@@ -50,66 +50,66 @@ export const PROJECTS: Project[] = [
     color: "light-blue",
   },
 
-  {
-    id: 4,
-    title: "Big Historical Data",
-    category: "data",
-    status: "done",
-    duration: "Spring 2017",
-    role: "Data Analyst, Full-Stack Developer",
-    description: "digital humanities - analyzed corpus historical data",
-    tools: ["Pandas", "NLTK", "Ruby on Rails"],
-    color: "navy",
-  },
-
-
-  {
-    id: 5,
-    title: "Thin Ice",
-    category: "misc",
-    status: "done",
-    duration: "Dec 2015",
-    role: "Game Developer",
-    description: "developed a maze game using machine learning technqiues to randomize levels",
-    tools: ["Python", "PyGame"],
-    color: "red"
-  },
-
   // {
-  //   id: 6,
-  //   title: "Predicting Flight Delays",
+  //   id: 4,
+  //   title: "Big Historical Data",
   //   category: "data",
   //   status: "done",
-  //   duration: "May 2017",
-  //   role: "Data Scientist",
-  //   description: "created machines learning tests",
-  //   tools: ["Pandas"],
+  //   duration: "Spring 2017",
+  //   role: "Data Analyst, Full-Stack Developer",
+  //   description: "digital humanities - analyzed corpus historical data",
+  //   tools: ["Pandas", "NLTK", "Ruby on Rails"],
+  //   color: "navy",
+  // },
+
+
+  // {
+  //   id: 5,
+  //   title: "Thin Ice",
+  //   category: "misc",
+  //   status: "done",
+  //   duration: "Dec 2015",
+  //   role: "Game Developer",
+  //   description: "developed a maze game using machine learning technqiues to randomize levels",
+  //   tools: ["Python", "PyGame"],
   //   color: "red"
   // },
 
-  {
-    id: 5,
-    title: "Prantls",
-    category: "web",
-    status: "done",
-    duration: "March 2016",
-    role: "Front-End Developer",
-    description: "my first web development project",
-    tools: ["HTML5", "CSS3"],
-    color: "light-blue"
-  },
+  // // {
+  // //   id: 6,
+  // //   title: "Predicting Flight Delays",
+  // //   category: "data",
+  // //   status: "done",
+  // //   duration: "May 2017",
+  // //   role: "Data Scientist",
+  // //   description: "created machines learning tests",
+  // //   tools: ["Pandas"],
+  // //   color: "red"
+  // // },
 
-  {
-    id: 7,
-    title: "sjark consulting",
-    category: "web",
-    status: "done",
-    duration: "April 2016",
-    role: "Product Manager, Front-End Developer",
-    description: "technical case study with a dashboard",
-    tools: ["HTML5", "CSS3"],
-    color: "navy"
-  },
+  // {
+  //   id: 5,
+  //   title: "Prantls",
+  //   category: "web",
+  //   status: "done",
+  //   duration: "March 2016",
+  //   role: "Front-End Developer",
+  //   description: "my first web development project",
+  //   tools: ["HTML5", "CSS3"],
+  //   color: "light-blue"
+  // },
+
+  // {
+  //   id: 7,
+  //   title: "sjark consulting",
+  //   category: "web",
+  //   status: "done",
+  //   duration: "April 2016",
+  //   role: "Product Manager, Front-End Developer",
+  //   description: "technical case study with a dashboard",
+  //   tools: ["HTML5", "CSS3"],
+  //   color: "navy"
+  // },
 
   // {
   //   id: ,

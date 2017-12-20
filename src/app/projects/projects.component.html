@@ -1,63 +1,57 @@
-<div class="title">
-  <h1>Projects</h1>
-</div>
+<div id="projects">
+    <div class="title">
+      <h1>Projects</h1>
+    </div>
 
-<div id="filterList">
-  <ul id="filters" class="clearfix">
-      <li><span class="filter #portfoliolist .portfolio.square" data-filter=".web, .data, .misc">all</span></li>
-      <li><span class="filter" data-filter=".fav">favorites</span></li>
-      <li><span class="filter" data-filter=".web">web</span></li>
-      <li><span class="filter" data-filter=".data">data</span></li>
-      <li><span class="filter" data-filter=".misc">miscellaneous</span></li>
+    <div id="filterList">
+      <ul id="filters" class="clearfix">
+          <li><span class="filter #portfoliolist .portfolio.square" data-filter=".web, .data, .misc">all</span></li>
+          <li><span class="filter" data-filter=".fav">favorites</span></li>
+          <li><span class="filter" data-filter=".web">web</span></li>
+          <li><span class="filter" data-filter=".data">data</span></li>
+          <li><span class="filter" data-filter=".misc">miscellaneous</span></li>
+      </ul>
+    </div>
 
-  </ul>
-</div>
-
-<div id="portfoliolist">
-
-  <div *ngFor="let project of projects">
-
-        <!-- {{project.color}} -->
-        <!-- <div class="portfolio square {{project.category}}" onClick="window.open('http://www.google.com','_self');"> -->
-      <div class="portfolio square {{project.category}}">
-        <div class="portfolio-content square-content">
-            
-            <div class="portfolio-title">
-              <h2>{{project.title}}</h2>
-            </div>
-
-            <div class="content-overlay"></div>
-
-            <div class="overlay-details {{project.status}}">
-              <div class="overlay-status">
-                <p>{{project.duration}}</p>
-              </div>
-              <div class="overlay-title">
-                <h2>{{project.title}}</h2>
-              </div>
-              <div class="overlay-description">
-                <p>{{project.description}}</p>
-              </div>
-
-              <div class="overlay-tools">
-                <!-- <div *ngFor="let tool of {{project.tools}}"> -->
-                  <div class="tool square">
-                    <img class="square-content" src="../assets/img/tools/angular.png">
+    
+    <div id="portfoliolist">
+      <div *ngFor="let project of projects">
+            <!-- {{project.color}} -->
+            <!-- <div class="portfolio square {{project.category}}" onClick="window.open('http://www.google.com','_self');"> -->
+          <div class="portfolio square {{project.category}}">
+              <div class="portfolio-content square-content">
+          
+                  <div class="portfolio-title">
+                    <h2>{{project.title}}</h2>
                   </div>
-                <!-- </div> -->
-              </div>
-              
-            </div>
 
-        </div>  
+                  <div class="content-overlay"></div>
+
+                  <div class="overlay-details {{project.status}}">
+                      <div class="overlay-status">
+                        <p>{{project.duration}}</p>
+                      </div>
+                      <div class="overlay-title">
+                        <h2>{{project.title}}</h2>
+                      </div>
+                      <div class="overlay-description">
+                        <p>{{project.description}}</p>
+                      </div>
+
+                      <div class="overlay-tools">
+                        <!-- <div *ngFor="let tool of {{project.tools}}"> -->
+                          <div class="tool square">
+                            <img class="square-content" src="../assets/img/tools/angular.png">
+                          </div>
+                        <!-- </div> -->
+                      </div>
+                  </div>
+              </div>  
+          </div>
       </div>
-
-
-  </div>
+    </div>
 
 </div>
-
-
 
   
 

@@ -11,38 +11,19 @@ nav a {
 	text-transform: lowercase;
 }
 
-nav .container {
+/*nav .container {
 	align-content: center;
-}
-
-
-.navbar-burger:hover {
-  background-color: var(--magenta) !important;
-}
+}*/
 
 .navbar-burger span {
 	background-color: white !important;
 }
-/*
-	.navbar-burger.is-active span {
-		background-color: var(--magenta) !important;
+
+	.navbar-burger:hover {
+	  background-color: var(--magenta) !important;
 	}
-
-	.navbar-burger:hover .is-active span {
-	  background-color: white !important;
-	}*/
-
 
 
 .navbar-brand {
 	padding: 0;
 }
-
-nav {
-/*    display: -webkit-flex;
-    -webkit-align-items: center;
-    display: flex;
-    align-items: center;*/
-}
-
-

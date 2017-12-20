@@ -29,7 +29,8 @@
 	}
 	
 	#filters li span.active {
-		text-decoration: underline;
+		/*text-decoration: underline;*/
+		font-weight: bolder;
 	}
  
 
