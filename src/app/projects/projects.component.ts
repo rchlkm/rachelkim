@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PROJECTS } from '../list-of-projects';
 import { Project } from '../project';
 import { ProjectService } from '../project.service';
 
@@ -14,7 +13,7 @@ export class ProjectsComponent implements OnInit {
 
 	// projects = PROJECTS;
 
-  selectedProject: Project;
+  // selectedProject: Project;
 
   projects: Project[];
 
@@ -25,9 +24,9 @@ export class ProjectsComponent implements OnInit {
     this.getProjects();
   }
 
-  onSelect(project: Project): void {
-  		this.selectedProject = project;
-  	}
+  // onSelect(project: Project): void {
+  		// this.selectedProject = project;
+  	// }
 
   // getProjects(): void {
   //   this.projects = this.projectService.getProjects();
@@ -39,3 +38,4 @@ export class ProjectsComponent implements OnInit {
   }
 
 }
+

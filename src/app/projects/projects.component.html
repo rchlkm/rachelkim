@@ -20,41 +20,44 @@
         (click)="onSelect(project)">
             <!-- {{project.color}} -->
             <!-- <div class="portfolio square {{project.category}}" onClick="window.open('http://www.google.com','_self');"> -->
-          <div class="portfolio square {{project.category}}">
-              <div class="portfolio-content square-content">
-          
-                  <div class="portfolio-title">
-                    <h2>{{project.title}}</h2>
-                  </div>
+                <!-- routerLink="/detail/{{hero.id}} -->
+          <a routerLink="/detail/{{project.id}}">
+            <div class="portfolio square {{project.category}}">
+                <div class="portfolio-content square-content">
+            
+                    <div class="portfolio-title">
+                      <h2>{{project.title}}</h2>
+                    </div>
 
-                  <div class="content-overlay"></div>
+                    <div class="content-overlay"></div>
 
-                  <div class="overlay-details {{project.status}}">
-                      <div class="overlay-status">
-                        <p>{{project.duration}}</p>
-                      </div>
-                      <div class="overlay-title">
-                        <h2>{{project.title}}</h2>
-                      </div>
-                      <div class="overlay-description">
-                        <p>{{project.description}}</p>
-                      </div>
+                    <div class="overlay-details {{project.status}}">
+                        <div class="overlay-status">
+                          <p>{{project.duration}}</p>
+                        </div>
+                        <div class="overlay-title">
+                          <h2>{{project.title}}</h2>
+                        </div>
+                        <div class="overlay-description">
+                          <p>{{project.description}}</p>
+                        </div>
 
-                      <div class="overlay-tools">
-                        <!-- <div *ngFor="let tool of {{project.tools}}"> -->
-                          <div class="tool square">
-                            <img class="square-content" src="../assets/img/tools/angular.png">
-                          </div>
-                        <!-- </div> -->
-                      </div>
-                  </div>
-              </div>  
-          </div>
+                        <div class="overlay-tools">
+                          <!-- <div *ngFor="let tool of {{project.tools}}"> -->
+                            <div class="tool square">
+                              <img class="square-content" src="../assets/img/tools/angular.png">
+                            </div>
+                          <!-- </div> -->
+                        </div>
+                    </div>
+                </div>  
+            </div>
+          </a>
       </div>
     </div>
 
 
-    <app-project-detail [project]="selectedProject"></app-project-detail>
+    <!-- <app-project-detail [project]="selectedProject"></app-project-detail> -->
 
 </div>
 

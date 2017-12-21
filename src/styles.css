@@ -35,6 +35,7 @@
 }
 
 html {
+	font-family: 'Nunito Sans','Quicksand', 'Avenir Next', sans-serif;
 	overflow-y: scroll;
 	min-width: 300px;
 	height: 100%;
@@ -52,7 +53,6 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Nunito Sans','Quicksand', 'Avenir Next', sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -189,7 +189,7 @@ nav {
 footer {
 	/*background-color: rgba(225, 35, 110, 0.5);*/
 	/*color: white !important;*/
-	/*border-top: 5px solid var(--magenta) !important;*/
+	border-top: 1px solid var(--magenta) !important;
 }
 	footer .footer-copyright {
 		/*background-color: var(--navy-dark);*/

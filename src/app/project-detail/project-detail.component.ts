@@ -1,5 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
 import { Project } from '../project';
+import { ProjectService }  from '../project.service';
+
 
 @Component({
   selector: 'app-project-detail',
@@ -8,11 +13,43 @@ import { Project } from '../project';
 })
 export class ProjectDetailComponent implements OnInit {
   
-  @Input() project: Project;
+  // @Input() 
+  project: Project;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private projectService: ProjectService,
+    private location: Location
+  ) {  }
 
   ngOnInit() {
+  	this.getProject();
+  	console.log("init");
+  	console.log("WHAT",this.project);
+
   }
+
+  // getProject(): void {
+  //   var title = this.route.snapshot.paramMap.get('title');
+  //   console.log("title",title);
+  //   this.projectService.getProject(title)
+  //     .subscribe(project => this.project = project);
+  // }
+
+  getProject(): void {
+    // const id = +this.route.snapshot.paramMap.get('id');
+    console.log("router",this.route.snapshot.paramMap);
+
+    const id = +this.route.snapshot.paramMap.get('id');
+    // const id: string = route.snapshot.params.id;
+    console.log("ID needs to show something!!",id);
+    // this.projectService.getProject(2)
+    this.projectService.getProject(id)
+      .subscribe(project => this.project = project);
+  }
+
+  goBack(): void {
+	  this.location.back();
+	}
 
 }
