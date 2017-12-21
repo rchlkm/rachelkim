@@ -1,5 +1,6 @@
 export class Project {
-	id: number;
+	// id: number;
+	id: string;
 	title: string;
 	category: string;
 	status: string;

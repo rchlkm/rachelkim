@@ -29,21 +29,8 @@ export class ProjectDetailComponent implements OnInit {
 
   }
 
-  // getProject(): void {
-  //   var title = this.route.snapshot.paramMap.get('title');
-  //   console.log("title",title);
-  //   this.projectService.getProject(title)
-  //     .subscribe(project => this.project = project);
-  // }
-
   getProject(): void {
-    // const id = +this.route.snapshot.paramMap.get('id');
-    console.log("router",this.route.snapshot.paramMap);
-
-    const id = +this.route.snapshot.paramMap.get('id');
-    // const id: string = route.snapshot.params.id;
-    console.log("ID needs to show something!!",id);
-    // this.projectService.getProject(2)
+    const id = this.route.snapshot.paramMap.get('id');
     this.projectService.getProject(id)
       .subscribe(project => this.project = project);
   }
@@ -53,3 +40,17 @@ export class ProjectDetailComponent implements OnInit {
 	}
 
 }
+
+
+
+  // getProject(): void {
+  //   // const id = +this.route.snapshot.paramMap.get('id');
+  //   console.log("router",this.route.snapshot.paramMap);
+
+  //   const id = +this.route.snapshot.paramMap.get('id');
+  //   // const id: string = route.snapshot.params.id;
+  //   console.log("ID needs to show something!!",id);
+  //   // this.projectService.getProject(2)
+  //   this.projectService.getProject(id)
+  //     .subscribe(project => this.project = project);
+  // }

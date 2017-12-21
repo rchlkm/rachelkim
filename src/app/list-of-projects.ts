@@ -3,7 +3,7 @@ import { Project } from './project';
 export const PROJECTS: Project[] = [
 
   {
-    id: 0,
+    id: "jemasen",
     title: "Jemasen",
     category: "web data fav",
     status: "coming-soon",
@@ -15,7 +15,7 @@ export const PROJECTS: Project[] = [
   },
 
   {
-    id: 1,
+    id: "chess-store",
     title: "A&M Chess Store",
     category: "web",
     status: "done",
@@ -27,7 +27,7 @@ export const PROJECTS: Project[] = [
   },
 
   {
-    id: 2,
+    id: "airbnb-data",
     title: "Case Study: Airbnb",
     category: "data",
     status: "done",
@@ -39,7 +39,7 @@ export const PROJECTS: Project[] = [
   },
 
   {
-    id: 3,
+    id: "asa-booth",
     title: "ASA Booth",
     category: "misc",
     status: "done",
