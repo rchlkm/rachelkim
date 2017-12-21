@@ -113,7 +113,7 @@
   color: #4a4a4a;
   display: block;
   line-height: 1.5;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
   position: relative;
 }
 
@@ -211,9 +211,12 @@ a.navbar-item:hover, a.navbar-item.is-active,
   .navbar-menu.is-active {
     display: block;
   }
+
 }
 
+/* HAMBURGER NOT TOGGLED */
 @media screen and (min-width: 1008px) {
+  /*@media screen and (min-width: 975px) {*/
   .navbar,
   .navbar-menu,
   .navbar-start,
@@ -228,6 +231,11 @@ a.navbar-item:hover, a.navbar-item.is-active,
   .navbar {
     min-height: 3.25rem;
   }
+
+ .navbar-item {
+    padding: 0.5rem 1rem;
+  }
+
   .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item.is-active,
   .navbar.is-transparent .navbar-link:hover,
   .navbar.is-transparent .navbar-link.is-active {

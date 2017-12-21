@@ -16,11 +16,15 @@ nav a {
 }*/
 
 .navbar-burger span {
-	background-color: white !important;
+	/*background-color: white !important;*/
+	/*background-color: #E1236E !important;*/
+	background-color: #252934 !important;
 }
 
 	.navbar-burger:hover {
 	  /*background-color: var(--magenta) !important;*/
+	  /*background-color: #E1236E !important;*/
+	  /*background-color: #252934 !important;*/
 	  background-color: #E1236E !important;
 	}
 

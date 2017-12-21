@@ -4,7 +4,8 @@
 @import	url('assets/css/portfolio-grid.css');
 @import	url('assets/css/portfolio-filter.css');
 @import	url('assets/css/colors.css');
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+/*@import url(https://fonts.googleapis.com/css?family=Quicksand);*/
+@import url(https://fonts.google.com/specimen/Nunito+Sans);
 
 :root {
 	--navy: #252934;
@@ -51,7 +52,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Raleway', 'Avenir Next', sans-serif;
+	font-family: 'Nunito Sans','Quicksand', 'Avenir Next', sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -64,7 +65,8 @@ body {
 
 
 .navbar {
-	background-color: #f5f5f5;
+	/*margin: 0 -1rem;*/
+	padding: 1rem 0;
 }
 
 	.sticky {
@@ -76,6 +78,34 @@ body {
 	  border-top: 0;
 	}
 
+div .navbar-brand {
+	/*padding: 0 !important;*/
+	font-size: 1.5rem;
+	font-weight: bold;
+	/*margin-left: -1rem;*/
+	/*margin-bottom: -1.25rem;*/
+}
+
+	.navbar-brand {
+		/*margin: -1rem;*/
+	}
+
+	.navbar-burger {
+		/*height: -50% !important;*/
+	}
+
+div #navMenu {
+	/*margin-right: -0.5rem;*/
+}
+
+	div#navMenu.navbar-menu.is-active > a .navbar-item {
+		padding: 0.5rem 0;
+		/*padding: 0.5rem 1rem;*/
+	}
+
+/*.navbar-menu .is-active .navbar-item {
+	padding: 0.5rem 1rem;
+}*/
 
 main {
 	min-height: 50vh;
@@ -104,7 +134,7 @@ footer {
 		display: -ms-flexbox;
 		display: flex;
 
-		background-color: rgba(51, 51, 51, 0.08);
+		/*background-color: rgba(51, 51, 51, 0.08);*/
 		width: 100%;
 	}
 
@@ -128,17 +158,25 @@ a {
 
 
 /* colors */
-::selection {
-	background-color: var(--magenta);
-	color: white;
+html {
+	color: var(--navy) !important;
 }
 
+	::selection {
+		background-color: var(--magenta);
+		color: white;
+	}
+
 nav, footer {
-	background-color: var(--navy) !important;
+	/*background-color: var(--navy) !important;*/
 }
 	nav a, footer a {
-		color: white !important;
+		/*color: white !important;*/
+		/*color: var(--magenta) !important;*/
+		color: var(--navy) !important;
 	}
+
+
 
 
 nav {
@@ -149,11 +187,12 @@ nav {
 
 
 footer {
-	color: white !important;
-	border-top: 5px solid var(--magenta) !important;
+	/*background-color: rgba(225, 35, 110, 0.5);*/
+	/*color: white !important;*/
+	/*border-top: 5px solid var(--magenta) !important;*/
 }
 	footer .footer-copyright {
-		background-color: var(--navy-dark);
+		/*background-color: var(--navy-dark);*/
 	}
 
 
