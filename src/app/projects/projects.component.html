@@ -13,9 +13,11 @@
       </ul>
     </div>
 
-    
+
     <div id="portfoliolist">
-      <div *ngFor="let project of projects">
+      <div *ngFor="let project of projects"
+        [class.selected]="project === selectedProject"
+        (click)="onSelect(project)">
             <!-- {{project.color}} -->
             <!-- <div class="portfolio square {{project.category}}" onClick="window.open('http://www.google.com','_self');"> -->
           <div class="portfolio square {{project.category}}">
@@ -50,6 +52,9 @@
           </div>
       </div>
     </div>
+
+
+    <app-project-detail [project]="selectedProject"></app-project-detail>
 
 </div>
 

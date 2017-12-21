@@ -14,6 +14,8 @@ export class ProjectsComponent implements OnInit {
 
 	projects = PROJECTS;
 
+  selectedProject: Project;
+
 
   constructor() { 
     // console.log("projects", this.projects);
@@ -21,8 +23,8 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() { }
 
-  // onSelect(project: Project): void {
-  // 		this.selectedProject = project;
-  // 	}
+  onSelect(project: Project): void {
+  		this.selectedProject = project;
+  	}
 
 }
