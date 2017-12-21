@@ -209,3 +209,36 @@ a:hover,
 #filters li span.active {
 	color: var(--navy);
 }
+
+hr {
+	color: var(--magenta);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item {
+	margin: 2rem 0;
+}
+	.item h4 {
+		text-transform: uppercase;
+		margin-bottom: 0.5rem;
+		font-weight: 200;
+	}
+
+	.item ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 0.2rem;
+	}

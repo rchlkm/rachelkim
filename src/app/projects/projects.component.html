@@ -18,9 +18,7 @@
       <div *ngFor="let project of projects"
         [class.selected]="project === selectedProject"
         (click)="onSelect(project)">
-            <!-- {{project.color}} -->
-            <!-- <div class="portfolio square {{project.category}}" onClick="window.open('http://www.google.com','_self');"> -->
-                <!-- routerLink="/detail/{{hero.id}} -->
+        
           <a routerLink="/detail/{{project.id}}">
             <div class="portfolio square {{project.category}}">
                 <div class="portfolio-content square-content">

@@ -5,6 +5,7 @@ export class Project {
 	category: string;
 	status: string;
 	duration: string;
+	type: string
 	role: string;
 	description: string;
 	// tools: array;

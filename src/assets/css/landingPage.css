@@ -1,21 +1,44 @@
 #landing {
-	min-height: 100vh;
-	/*border-top: 3px var(--magenta) solid; */
+	height: 100vh;
 	border-top: 4px #E1236E solid; 
-	/*#E1236E*/
+
+	display: block;
+	position: relative;
+	overflow-y: hidden;
 }
+
+	#seeProjects {
+		margin: auto;
+		text-align: center;
+		height: 10vh;
+	}
+
 
 #landing .container {
 	width: 75%;
 	height: 50vh;
-	margin: auto;
-	align-content: center;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+	margin: 20vh auto;
+}
 
-	/*border: 1px dotted grey;*/
+@media only screen and (min-width: 975px) and (max-width: 1200px) {  
+	#landing .container {
+		height: 60vh;
+		margin: 15vh auto;
+	}
+}
+
+@media only screen and (max-width: 975px) {
+	#landing .container {
+		height: 70vh;
+		margin: 10vh auto;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#landing .container {
+		height: 80vh;
+		margin: 5vh auto;
+	}
 }
 
 div #hello {
@@ -44,6 +67,10 @@ div #hello {
 #landing p {
 	font-size: 2rem;
 	line-height: 3.5rem;
+}
+
+#landing p span {
+	color: #E1236E;
 }
 
 

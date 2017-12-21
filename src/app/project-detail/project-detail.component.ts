@@ -15,6 +15,8 @@ export class ProjectDetailComponent implements OnInit {
   
   // @Input() 
   project: Project;
+  tools: Object;
+  // category: Object
 
   constructor(
     private route: ActivatedRoute,
@@ -24,9 +26,8 @@ export class ProjectDetailComponent implements OnInit {
 
   ngOnInit() {
   	this.getProject();
-  	console.log("init");
-  	console.log("WHAT",this.project);
-
+    this.tools = this.project.tools;
+    // this.category = this.project.category;
   }
 
   getProject(): void {

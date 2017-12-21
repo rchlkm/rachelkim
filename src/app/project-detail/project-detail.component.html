@@ -1,10 +1,67 @@
-<div *ngIf="project">
-	project
-  <h2>{{ project.title | uppercase }} Details</h2>
-  <div><span>id: </span>{{project.id}}</div>
+<div class="project-detail" *ngIf="project">
+
+
+	<div class="project intro">
+		<div class="content">
+			<h1>{{ project.title | uppercase }}</h1>
+			<p>{{ project.description }}</p>
+
+			<div class="item">
+				<h4>Overiew</h4>
+				<!-- <span>{{ project.overview }}</span> -->
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum at lacus vel posuere. Proin non neque imperdiet, venenatis lacus ut, ultrices metus.</span>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="project info">
+		<div class="content">
+			<div class="item">
+				<h4>Role</h4>
+				<span>{{ project.role }}</span>
+			</div>
+
+			<div class="item">
+				<h4>Duration</h4>
+				<span>{{ project.duration }}</span><br>
+				<span>{{ project.type }}</span>
+			</div>
+
+			<div class="item">
+				<h4>Tools</h4>
+				<span>			
+					<ul *ngFor="let tool of tools">
+						<li>{{tool}}</li>
+					</ul>
+				</span>
+			</div>
+
+			<div class="item">
+				<h4>Demo</h4>
+				<span>{{ project.link }}</span>
+			</div>
+
+		</div>
+	</div>
+
+  
+  	<div class="project main">
+  		<div class="content">
+  			<div class="item">
+  				<h4>The Project</h4>
+			</div>
+
+			<span>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum at lacus vel posuere. Proin non neque imperdiet, venenatis lacus ut, ultrices metus. Aenean in tempor enim. Nunc facilisis diam et accumsan vestibulum. Ut accumsan eu orci ut fermentum. Fusce hendrerit pharetra venenatis. Maecenas sit amet egestas sem. Aliquam rutrum, urna in cursus mollis, lorem lorem pulvinar ante, at tincidunt mi ex ac urna. Vestibulum dictum vestibulum mollis. Nulla sit amet efficitur justo. Fusce sit amet molestie nulla, non tincidunt mauris. Suspendisse et nulla ac ex consequat dictum sed a mauris. Curabitur ut auctor est. Sed et ligula eget lacus ultricies iaculis in a nunc.
+			</span>
+		</div>
+  	</div>
+
 
 </div>
 
 <!-- hello -->
 
 <!-- <button (click)="goBack()">go back</button> -->
+
