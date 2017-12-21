@@ -307,7 +307,7 @@
 
 	/*  TABLET (2 items per row) with bigger margins */
 	@media only screen and (min-width: 800px) and (max-width: 975px) {
-		.container {
+	/*	.container {
 			width: 85%;
 		}
 		.overlay-title h2 {
@@ -316,7 +316,7 @@
 
 		.overlay-title h2 {
 			font-size: 1.4em;
-		}
+		}*/
 		
 		/*.overlay-description p {
 			font-size: .8em;
