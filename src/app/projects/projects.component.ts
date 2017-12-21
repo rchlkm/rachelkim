@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { PROJECTS } from '../list-of-projects';
 import { Project } from '../project';
-
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-projects',
@@ -12,19 +12,30 @@ import { Project } from '../project';
 
 export class ProjectsComponent implements OnInit {
 
-	projects = PROJECTS;
+	// projects = PROJECTS;
 
   selectedProject: Project;
 
+  projects: Project[];
 
-  constructor() { 
-    // console.log("projects", this.projects);
+
+  constructor(private projectService: ProjectService) { }
+
+  ngOnInit() { 
+    this.getProjects();
   }
-
-  ngOnInit() { }
 
   onSelect(project: Project): void {
   		this.selectedProject = project;
   	}
+
+  // getProjects(): void {
+  //   this.projects = this.projectService.getProjects();
+  // }
+
+  getProjects(): void {
+    this.projectService.getProjects()
+        .subscribe(projects => this.projects = projects);
+  }
 
 }
