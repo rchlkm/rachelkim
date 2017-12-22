@@ -26,7 +26,9 @@
 	
 
 	<div id="seeProjects">
-		<span>Please check out my projects!</span>
+		<a href="#projects">
+			<span>Please check out my projects!</span>
+		</a>
 	</div>
 
     
@@ -52,8 +54,10 @@
 
 		<div id="navMenu" class="navbar-menu">
 			<div class="navbar-end">    
-				<a class="navbar-item" routerLink="/about">&nbsp; about</a>
-				<a class="navbar-item" routerLink="/projects">&nbsp; projects</a>
+				<a class="navbar-item" href="#about">&nbsp; about</a>
+				<a class="navbar-item" href="#projects">&nbsp; projects</a>
+				<!-- <a class="navbar-item" routerLink="/about">&nbsp; about</a>
+				<a class="navbar-item" routerLink="/projects">&nbsp; projects</a> -->
 				<a class="navbar-item" href="../assets/kim,rachel.pdf" target="_blank">&nbsp;resume</a>
 			</div>
 
@@ -63,9 +67,16 @@
 
 
 
-<main id="top">
+<!-- <main id="top"> -->
+<main>
 	<div class='container'>
-		<router-outlet></router-outlet>
+		<!-- <router-outlet></router-outlet> -->
+		<app-projects></app-projects>
+	</div>
+</main>
+<main>
+	<div class='container'>
+		<app-about></app-about>
 	</div>
 </main>
 
