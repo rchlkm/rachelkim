@@ -253,8 +253,8 @@ hr {
   margin-top: -13vh; */
     /*height: 33vh; 
   margin-top: -33vh; */
-  /*visibility: hidden;*/
-  border: 1px solid red;
+  visibility: hidden;
+  /*border: 1px solid red;*/
 }
 
 main {
