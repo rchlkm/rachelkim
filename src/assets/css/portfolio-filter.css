@@ -35,20 +35,13 @@
 	}
  
 
-
-#portfoliolist {
-	margin: 0 -.91665%;
-} 
-
 #portfoliolist .portfolio.square {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	
-	  /*DEFAULT: show 3 items per row */
-
-	width:31.5%; 
-	margin:.91665%;
+  /*DEFAULT: show 3 items per row -- added before mobile responisve */
+	/*width:31.5%; margin:.91665%;*/
 
 	position: relative;
 	display:none;
@@ -255,11 +248,18 @@
 
 
 #portfoliolist {
-	border: 1px solid red;
-	height: 100px;
+	/*margin: 0 -.91665%;*/
+	margin: 0 -1%;
 
+	border: 1px solid red;
+	/*min-height: 100px;*/
 }
 
+#portfoliolist .portfolio.square {
+	/*DEFAULT: show 3 items per row */
+	width:31.5%; 
+	margin:.91665%;
+}
 
 
 /*  SMALLER DESKTOP / BIGGER TABLET (3 items per row) with smaller margins */
@@ -271,7 +271,7 @@
 
 	@media only screen and (min-width: 975px) and (max-width: 1200px) {  
 		.container {
-			width: 98%;
+			width: 96%;
 		}
 	}
 
@@ -280,18 +280,14 @@
 		.container { 
 			width: 96%; 
 		}
-		
-		#filters {
-			border: 1px solid black;
-		}
 
 		#portfoliolist {
-			margin: 0 -2%;
+			margin: 0 -1%;
 		} 
 
 		#portfoliolist .portfolio.square {
-			width:46%;
-			margin:2%;
+			width:48%;
+			margin:1%;
 		}
 
 		.overlay-status {
@@ -314,7 +310,7 @@
 	/* MOBILE PHONE (1 item per row) */
 	@media only screen and (max-width: 600px) {
 		.container { 
-			width: 95%; 
+			width: 96%; 
 		}
 
 		#portfoliolist {
@@ -322,7 +318,7 @@
 			/*margin: 0 -2.3%;*/
 		} 
 		#portfoliolist .portfolio.square {
-			width: 98%;
+			width: 95%;
 			margin: 1%;
 		}
 

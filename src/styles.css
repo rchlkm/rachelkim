@@ -63,7 +63,7 @@ body {
 	overflow-y: hidden;
 	overflow-x: hidden;
 
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid blue;
 }
 
 
@@ -98,7 +98,6 @@ main {
 	height: 8vh;
 	/*margin: 0 -1rem;*/
 	padding: 1rem 0;
-	border-bottom: 1px solid black !important;
 }
 	.sticky {
 	  position: fixed;

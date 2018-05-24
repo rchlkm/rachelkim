@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 import { Project } from '../project';
 import { ProjectService } from '../project.service';
@@ -11,12 +11,9 @@ import { ProjectService } from '../project.service';
 
 export class ProjectsComponent implements OnInit {
 
-	// projects = PROJECTS;
-
-  // selectedProject: Project;
+ @HostBinding('style.height') height: Number;
 
   projects: Project[];
-
 
   constructor(private projectService: ProjectService) { }
 
@@ -24,13 +21,6 @@ export class ProjectsComponent implements OnInit {
     this.getProjects();
   }
 
-  // onSelect(project: Project): void {
-  		// this.selectedProject = project;
-  	// }
-
-  // getProjects(): void {
-  //   this.projects = this.projectService.getProjects();
-  // }
 
   getProjects(): void {
     this.projectService.getProjects()
