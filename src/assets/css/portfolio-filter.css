@@ -280,7 +280,8 @@
 		}
 
 		#portfoliolist {
-			margin: 0 -1.25%;
+			/*margin: 0 -1.25%;*/
+			margin-left: 0 -2.5%;
 		} 
 
 		#portfoliolist .portfolio.square {
