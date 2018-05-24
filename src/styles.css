@@ -63,13 +63,17 @@ body {
 	overflow-y: hidden;
 }
 
-
-.navbar {
-	height: 10vh;
-	/*margin: 0 -1rem;*/
-	padding: 1rem 0;
+main {
+	min-height: 92vh;
+	/*margin: 3rem 0;*/
 }
 
+.navbar {
+	height: 8vh;
+	/*margin: 0 -1rem;*/
+	padding: 1rem 0;
+	border-bottom: 1px solid black !important;
+}
 	.sticky {
 	  position: fixed;
 	  width: 100%;
@@ -96,6 +100,7 @@ div .navbar-brand {
 	}
 
 div #navMenu {
+	background-color: white;
 	/*margin-right: -0.5rem;*/
 }
 
@@ -108,15 +113,12 @@ div #navMenu {
 	padding: 0.5rem 1rem;
 }*/
 
-main {
-	min-height: 50vh;
-	margin: 3rem 0;
-}
+
 
 footer {
-	border: 1px solid transparent;
-	z-index:-9999; 
-	min-height: 40vh;
+	border-top: 1px solid #E1236E;
+	/*z-index:-9999; */
+	/*min-height: 40vh;*/
 }
 
 	footer .footer-main {
@@ -143,6 +145,8 @@ footer {
 		margin: 0 auto;
 		padding: 1rem 0;
 	}
+
+
 
 
 a {
@@ -256,7 +260,7 @@ hr {
   visibility: hidden;
   /*border: 1px solid red;*/
 }
-
+/*
 main {
 	margin: 0;
-}
+}*/
