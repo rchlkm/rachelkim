@@ -11,18 +11,19 @@
 
 
 #filters {
-	margin: 1% -1.5%;
-	padding:0;
 	list-style:none;
+	padding-left: 0;
+	text-align: left;
+
 }
 
 	#filters li {
 		float:left;
-	}
+	}	
 	
 	#filters li span {
 		display: block;
-		padding:5px 20px;		
+		padding:5px 20px 5px 0;
 		text-decoration:none;
 		color:#666;
 		cursor: pointer;
@@ -36,7 +37,7 @@
 
 
 #portfoliolist {
-	margin: 0 -2.5% 0 -1.5%;
+	margin: 0 -.91665%;
 } 
 
 #portfoliolist .portfolio.square {
@@ -44,10 +45,10 @@
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	
-	/*  DEFAULT: show 3 items per row */
-	/*width:30%; margin:1.5%;*/
-	width:31%; 
-	margin:1%;
+	  /*DEFAULT: show 3 items per row */
+
+	width:31.5%; 
+	margin:.91665%;
 
 	position: relative;
 	display:none;
@@ -253,7 +254,11 @@
 
 
 
+#portfoliolist {
+	border: 1px solid red;
+	height: 100px;
 
+}
 
 
 
@@ -273,21 +278,20 @@
 	/* TABLET (2 items per row) */
 	@media only screen and (max-width: 975px) {
 		.container { 
-			width: 95%; 
+			width: 96%; 
 		}
 		
 		#filters {
-			margin-left: -2.5%;
+			border: 1px solid black;
 		}
 
 		#portfoliolist {
-			/*margin: 0 -1.25%;*/
-			margin-left: 0 -2.5%;
+			margin: 0 -2%;
 		} 
 
 		#portfoliolist .portfolio.square {
-			width:48%;
-			margin:1%;		
+			width:46%;
+			margin:2%;
 		}
 
 		.overlay-status {
@@ -307,36 +311,15 @@
 		}	
 	}
 
-	/*  TABLET (2 items per row) with bigger margins */
-	@media only screen and (min-width: 800px) and (max-width: 975px) {
-	/*	.container {
-			width: 85%;
-		}
-		.overlay-title h2 {
-			font-size: 1.5em;
-		}
-
-		.overlay-title h2 {
-			font-size: 1.4em;
-		}*/
-		
-		/*.overlay-description p {
-			font-size: .8em;
-		}*/
-	}
-	/* @media only screen and (min-width: 800px) and (max-width: 900px) {	}
-	*/
-
 	/* MOBILE PHONE (1 item per row) */
 	@media only screen and (max-width: 600px) {
 		.container { 
 			width: 95%; 
 		}
-		#filters {
-			margin-left: -1.15%;
-		}
+
 		#portfoliolist {
-			margin: 0 -1.15%;
+			margin: 0 -1%;
+			/*margin: 0 -2.3%;*/
 		} 
 		#portfoliolist .portfolio.square {
 			width: 98%;
@@ -347,28 +330,3 @@
 			opacity: 0;
 		}
 	}
-
-
-/*		.portfolio-title h2 {
-			font-size: 1.3em;
-		}
-
-		.overlay-status {
-			margin: 8% 0;
-			height: .6em;
-			font-size: .6em;
-		}
-		.overlay-title h2 {
-			font-size: 1.2em;
-		}
-
-		.overlay-title {
-			margin: 6% 0;
-		}
-		.overlay-description {
-			max-height: 1.6em;
-		}
-
-		.overlay-description p {
-			font-size: .6em;
-	}*/

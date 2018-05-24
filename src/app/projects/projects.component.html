@@ -1,4 +1,6 @@
-<div id="projects">
+<div id="projects" class="container">
+
+<!-- <div id="projects"> -->
     <div class="title">
       <h1>Projects</h1>
     </div>
@@ -17,7 +19,8 @@
     <div id="portfoliolist">
       <div *ngFor="let project of projects"
         [class.selected]="project === selectedProject"
-        (click)="onSelect(project)">
+        (click)="onSelect(project)"
+        [style.height.%]="height">
         
           <a routerLink="/detail/{{project.id}}">
             <div class="portfolio square {{project.category}}">
