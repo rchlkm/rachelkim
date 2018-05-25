@@ -64,7 +64,7 @@ body {
 	background-color: #fff;
 	top: 0;
 
-	max-width: 1500px;
+	/*max-width: 1500px;*/
 
 	border-bottom: 1px solid blue;
 	margin: 0 auto !important;
@@ -76,8 +76,9 @@ a {
 	text-decoration: none;
 }
 
-/* -------------------------------- */
-/* CONTAINER ---------------------- */
+/* --------------------------------------- */
+/* CONTAINER + MAIN ---------------------- */
+
 .container { 
 	position: relative; 
 	width: 80%; /* 960px */
@@ -89,12 +90,20 @@ a {
 	transition: all 1s ease;	
 }
 
-
 main {
 	min-height: 92vh;
 	/*margin: auto 8rem;*/
 	margin: auto 10%;
 }
+
+/* BIGGER DESKTOP */
+@media only screen and (min-width: 1500px) {  
+	.container {
+		width: 1250px;
+	}
+}
+
+
 /*  SMALLER DESKTOP / BIGGER TABLET (3 items per row) with smaller margins */
 @media only screen and (max-width: 1350px) {  
 	.container {
