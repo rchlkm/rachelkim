@@ -62,11 +62,11 @@ div #hello {
 	margin-bottom: 1rem;
 }
 
-	#landing h1 span {
+/*	#landing h1 span {
 		font-style: bold;
 		text-decoration: underline;
-		color: #E1236E; /*var(--magenta);*/
-	}
+		color: #E1236E;
+	}*/
 
 #landing p {
 	font-size: 2rem;
@@ -76,3 +76,13 @@ div #hello {
 #landing p span {
 	color: #E1236E;
 }
+
+
+
+span#rachelkim {
+	/*text-decoration: underline;*/
+} 
+	span#rachelkim:hover {
+		color: #E1236E;
+		text-decoration: underline;
+	}
