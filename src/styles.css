@@ -37,8 +37,11 @@
 html {
 	font-family: 'Nunito Sans','Quicksand', 'Avenir Next', sans-serif;
 	overflow-y: scroll;
+	overflow-x: hidden;
 	min-width: 300px;
+	
 	height: 100%;
+	margin: 0 auto;
 
 	-webkit-box-sizing: inherit;
 	-moz-box-sizing: inherit;
@@ -60,12 +63,19 @@ body {
 	text-align: left;
 	background-color: #fff;
 	top: 0;
-	overflow-y: hidden;
-	overflow-x: hidden;
+	/*overflow-y: hidden;*/
+	max-width: 1500px;
 
 	border-bottom: 1px solid blue;
+	margin: 0 auto !important;
+
 }
 
+
+
+a {
+	text-decoration: none;
+}
 
 main {
 	min-height: 92vh;
@@ -93,15 +103,16 @@ main {
 		}
 	}
 
-
+/* ----------------------------- */
+/* NAVBAR ---------------------- */
 .navbar {
 	height: 8vh;
-	/*margin: 0 -1rem;*/
+	width: 100%;
 	padding: 1rem 0;
 }
 	.sticky {
 	  position: fixed;
-	  width: 100%;
+	  /*width: 100%;*/
 	  left: 0;
 	  top: 0;
 	  z-index: 100;
@@ -109,11 +120,8 @@ main {
 	}
 
 div .navbar-brand {
-	/*padding: 0 !important;*/
 	font-size: 1.5rem;
 	font-weight: bold;
-	/*margin-left: -1rem;*/
-	/*margin-bottom: -1.25rem;*/
 }
 
 	.navbar-brand {
@@ -134,16 +142,15 @@ div #navMenu {
 		/*padding: 0.5rem 1rem;*/
 	}
 
-/*.navbar-menu .is-active .navbar-item {
-	padding: 0.5rem 1rem;
-}*/
-
-
-
+/* ----------------------------- */
+/* FOOTER ---------------------- */
 footer {
-	border-top: 1px solid #E1236E;
-	/*z-index:-9999; */
-	/*min-height: 40vh;*/
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	min-height: 10vh;
+	padding: 5%;
+	line-height: 2rem;
 }
 
 	footer .footer-main {
@@ -174,9 +181,6 @@ footer {
 
 
 
-a {
-	text-decoration: none;
-}
 
 .porfilio.square {
 	background-color: grey !important;
@@ -184,10 +188,9 @@ a {
 
 
 
+/* ----------------------------- */
+/* COLORS ---------------------- */
 
-
-
-/* colors */
 html {
 	color: var(--navy) !important;
 }
@@ -211,6 +214,7 @@ nav, footer {
 
 nav {
 	border-top: 5px var(--magenta) solid;
+	/*width: 100%;*/
 	/*border-bottom: 5px solid var(--magenta) !important;*/
 }
 

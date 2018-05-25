@@ -1,4 +1,5 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+// , HostBinding
 
 import { Project } from '../project';
 import { ProjectService } from '../project.service';
@@ -11,7 +12,7 @@ import { ProjectService } from '../project.service';
 
 export class ProjectsComponent implements OnInit {
 
- @HostBinding('style.height') height: Number;
+ // @HostBinding('style.height') height: Number;
 
   projects: Project[];
 
