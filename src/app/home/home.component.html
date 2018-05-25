@@ -1,4 +1,14 @@
 
+<script type="text/javascript">
+	jQuery('.scroll_to').click(function(e){
+		var jump = $(this).attr('href');
+		var new_position = $(jump).offset();
+		$('html, body').stop().animate({ scrollTop: new_position.top }, 500);
+		e.preventDefault();
+	});
+</script>
+
+
 	<div id="landing">
 	  <div class="container">
 	    <!-- <span id="hello" class="js-rotating">Hello!, 안녕!, 你好!</span> -->
@@ -25,6 +35,12 @@
 	    <br>
 	    <!-- <p>Resume | About Me | What I Do</p> -->
 
+			<div>
+				<a href="/home#about" class="scroll_to">
+					<span>learn more about me!</span>
+				</a>
+			</div>
+
 	    </div>
 	  
 	<!--   <a href="#about"><span></span>Scroll</a>
@@ -38,12 +54,9 @@
 		});
 	  </script> -->
 
-	<div>
-	    <a href="#about">
-	      <span>learn more about me!</span>
-	    </a>
-	  </div>
 
+
+	
 	<!-- 
 	  <div id="seeProjects">
 	    <a href="#projects">
