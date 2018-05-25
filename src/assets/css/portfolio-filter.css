@@ -1,15 +1,5 @@
-.container { 
-	position: relative; 
-	width: 80%; /* 960px */
-	min-width: 300px;
-	margin: 0 auto; 
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;	
-}
-
-
+/* ---------------------------------- */
+/* FILTER LIST ---------------------- */
 #filters {
 	list-style:none;
 	padding-left: 0;
@@ -35,12 +25,14 @@
 	}
  
 
+/* ------------------------------------- */
+/* POTFOLIO LIST  ---------------------- */
 #portfoliolist .portfolio.square {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	
-  /*DEFAULT: show 3 items per row -- added before mobile responisve */
+	/*DEFAULT: show 3 items per row -- added before mobile responisve section */
 	/*width:31.5%; margin:.91665%;*/
 
 	position: relative;
@@ -60,43 +52,8 @@
 	}
 	
 
-
-/* 
-	Clearing 
-*/
-.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
-
-.clearfix:before,
-.clearfix:after,
-.row:before,
-.row:after {
-	content: '\0020';
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0;
-	height: 0; 
-}
-
-.row:after,
-.clearfix:after {
-	clear: both; 
-}
-
-.row,
-.clearfix {
-	zoom: 1; 
-}
-
-.clear {
-	clear: both;
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0;
-	height: 0;
-}
-
+/* -------------------------------------- */
+/* PORTOFLIO TITLE ---------------------- */
 .portfolio-title {
 	margin: 0;
 	width: 80%;
@@ -128,7 +85,8 @@
 	}
 
 
-
+/* ---------------------------------------- */
+/* PORTOFLIO CONTENT ---------------------- */
 .portfolio-content .content-overlay {
 	background: rgba(0,0,0,0.2);
 	position: absolute;
@@ -147,8 +105,8 @@
 	}
 
 
-
-
+/* ------------------------------ */
+/* OVERLAY ---------------------- */
 .overlay-details {
 	opacity: 0;
 	position: absolute;
@@ -178,7 +136,7 @@
 		opacity: 1;
 	}
 
-
+	/* STATUS ---------------------- */
 	.overlay-status {
 		margin: 10% 0;
 		height: .8em;
@@ -189,6 +147,7 @@
 			content: "coming soon"
 		}
 
+	/* TITLE ---------------------- */
 	.overlay-title {
 		margin: 10% 0;
 		border-bottom: 1px solid #FFF;
@@ -208,6 +167,7 @@
 			white-space: nowrap;
 		}
 
+	/* DESCRIPTION ---------------------- */
 	.overlay-description {
 		margin: 10% 0 5% 0;
 		max-height: 2em;
@@ -220,8 +180,7 @@
 		  font-size: 0.8em;
 		}
 
-
-
+	/* TOOLS ---------------------- */
 	.overlay-tools {
 		line-height: 1em;
 	}
@@ -244,9 +203,8 @@
 
 
 
-
-
-
+/* ---------------------------------------- */
+/* MOBILE RESPONSIVE ---------------------- */
 #portfoliolist {
 	/*margin: 0 -.91665%;*/
 	margin: 0 -1%;
@@ -261,25 +219,12 @@
 	margin:.91665%;
 }
 
+/*  SMALLER DESKTOP / BIGGER TABLET (3 items per row) with smaller margins -- width: 90%; */
+@media only screen and (max-width: 1350px) {  }
+@media only screen and (min-width: 975px) and (max-width: 1200px) {  }
 
-/*  SMALLER DESKTOP / BIGGER TABLET (3 items per row) with smaller margins */
-@media only screen and (max-width: 1350px) {  
-	.container {
-		width: 90%;
-	}
-}
-
-	@media only screen and (min-width: 975px) and (max-width: 1200px) {  
-		.container {
-			width: 96%;
-		}
-	}
-
-	/* TABLET (2 items per row) */
+	/* TABLET (2 items per row) -- width: 96%; */
 	@media only screen and (max-width: 975px) {
-		.container { 
-			width: 96%; 
-		}
 
 		#portfoliolist {
 			margin: 0 -1%;
@@ -307,11 +252,8 @@
 		}	
 	}
 
-	/* MOBILE PHONE (1 item per row) */
+	/* MOBILE PHONE (1 item per row) --  width: 96%; */
 	@media only screen and (max-width: 600px) {
-		.container { 
-			width: 96%; 
-		}
 
 		#portfoliolist {
 			margin: 0 -1%;
@@ -325,3 +267,45 @@
 			opacity: 0;
 		}
 	}
+
+
+/* ------------------------------- */
+/* CLEARING ---------------------- */
+.container:after { 
+	content: "\0020"; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0; 
+}
+
+.row:after,
+.clearfix:after {
+	clear: both; 
+}
+
+.row,
+.clearfix {
+	zoom: 1; 
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}

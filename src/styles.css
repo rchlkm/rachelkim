@@ -76,6 +76,20 @@ a {
 	text-decoration: none;
 }
 
+/* -------------------------------- */
+/* CONTAINER ---------------------- */
+.container { 
+	position: relative; 
+	width: 80%; /* 960px */
+	min-width: 300px;
+	margin: 0 auto; 
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;	
+}
+
+
 main {
 	min-height: 92vh;
 	/*margin: auto 8rem;*/
@@ -83,19 +97,37 @@ main {
 }
 /*  SMALLER DESKTOP / BIGGER TABLET (3 items per row) with smaller margins */
 @media only screen and (max-width: 1350px) {  
+	.container {
+		width: 90%;
+	}
+
 	main {
-		/*margin: auto 3rem;*/
 		margin: auto 2%;
 	}
+
 }
+	@media only screen and (min-width: 975px) and (max-width: 1200px) {  
+		.container {
+			width: 96%;
+		}
+	}
+
 	/* TABLET (2 items per row) */
 	@media only screen and (max-width: 975px) {
+		.container { 
+			width: 96%; 
+		}
+
 		main {
 			/*margin: auto 1rem;*/
 			margin: auto 2.5%;
 		}
 	}
 	@media only screen and (max-width: 600px) {
+		.container { 
+			width: 96%; 
+		}
+
 		main {
 			/*margin: auto 0.5rem;*/
 			margin: auto 2.3%;
@@ -113,7 +145,7 @@ main {
 	.sticky {
 	  position: fixed;
 	  width: 100%;
-	  /*left: 0;*/
+	  left: 0;
 	  top: 0;
 	  z-index: 100;
 	  /*border-top: 0;*/
