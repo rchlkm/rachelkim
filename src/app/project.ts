@@ -8,7 +8,6 @@ export class Project {
 	type: string
 	role: string;
 	description: string;
-	tools: array;
 	tools: {};
 	color: string;
 }
