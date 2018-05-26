@@ -19,9 +19,9 @@
     <div id="portfoliolist">
       <!-- [style.height]="height + 'px'" -->
       <!-- hello this should be the height of all the projct boxes... -->
-      <div *ngFor="let project of projects"
-        [class.selected]="project === selectedProject"
-        (click)="onSelect(project)">
+      <div *ngFor="let project of projects">
+        <!-- [class.selected]="project === selectedProject" -->
+        <!-- (click)="onSelect(project)"> -->
         
           <a routerLink="/detail/{{project.id}}">
             <div class="portfolio square {{project.category}}">

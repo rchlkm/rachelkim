@@ -1,4 +1,5 @@
-// PORTFOLIO MIXITUP
+/* ------------------------------------ */
+/* PORTFOLIO MIXITUP ------------------ */
 $(function () {
   
   var filterList = {
@@ -20,7 +21,9 @@ $(function () {
   filterList.init(); // Run the show!
 }); 
 
-// STICKY NAVBAR
+
+/* ------------------------------------ */
+/* STICKY NAVBAR ---------------------- */
 $(document).ready(function() {
   // grab the initial top offset of the navigation 
     var stickyNavTop = $('.navbar').offset().top;
@@ -46,7 +49,8 @@ $(document).ready(function() {
 });
 
 
-// BULMA - navbar
+/* ------------------------------------ */
+/* BULMA - navbar --------------------- */
 document.addEventListener('DOMContentLoaded', function () {
 
   // Get all "navbar-burger" elements
@@ -71,6 +75,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+});
+
+
+/* ------------------------------------ */
+/* SCROLLIFY  ------------------------- */
+function openModal() {
+      $.scrollify.disable();
+      $('#projects').css('overflow-y','scroll');
+    };
+    function closeModal() {
+      $.scrollify.enable();
+      $('#projects').css('overflow-y','none');
+    };
+
+$(function() {
+  $.scrollify({
+    section : ".example-classname",
+  });
 });
 
 

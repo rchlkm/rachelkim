@@ -86,3 +86,46 @@ span#rachelkim {
 		color: #E1236E;
 		text-decoration: underline;
 	}
+
+
+
+/* ---------------------------- */
+/* ABOUT ---------------------- */
+
+
+
+.scroll {
+  position:relative;
+  font-size:1.3em;
+  margin-top:20px;
+  display:inline-block;
+  height:100px;
+}
+.scroll:hover {
+  text-decoration:none;
+}
+
+.scroll:after {
+  content:'';
+  width:40px;
+  height:40px;
+  position:absolute;
+
+  margin:auto;
+  top:10px;
+  right:0;
+
+  left:0;
+  -webkit-animation:3s arrow infinite ease;
+  animation:3s arrow infinite ease;
+}
+
+.scroll:after {
+  border-right:2px solid #FFF;
+  border-bottom:2px solid #FFF;
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+
+}
+

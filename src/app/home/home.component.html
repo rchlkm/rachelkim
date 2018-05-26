@@ -1,14 +1,3 @@
-
-<script type="text/javascript">
-	jQuery('.scroll_to').click(function(e){
-		var jump = $(this).attr('href');
-		var new_position = $(jump).offset();
-		$('html, body').stop().animate({ scrollTop: new_position.top }, 500);
-		e.preventDefault();
-	});
-</script>
-
-
 	<div id="landing">
 	  <div class="container">
 	    <!-- <span id="hello" class="js-rotating">Hello!, 안녕!, 你好!</span> -->
@@ -35,34 +24,40 @@
 	    <br>
 	    <!-- <p>Resume | About Me | What I Do</p> -->
 
-			<div>
+		<!-- 	<div>
 				<a href="/home#about" class="scroll_to">
 					<span>learn more about me!</span>
 				</a>
-			</div>
+			</div> -->
+
+			<!-- 	<div class="section-class-name" data-section-name="home">
+					<a href="/home#about" class="scroll_to">
+						<span>learn more about me!</span>
+					</a>
+						
+				</div> -->
+
+		        <a href="#about" class="scroll">Scroll for more</a>
+		        <!-- <a href="" ng-click="gotoAnchor(x)">Scroll for more</a> -->
+		        
+
+		        
+
 
 	    </div>
 	  
-	<!--   <a href="#about"><span></span>Scroll</a>
-	  <script type="text/javascript">
-	  	$('#about').animatescroll({scrollSpeed:2000,easing:'easeInOutCubic'});
-
-	  	$(function() {
-		  $('a[href*=#]').on('click', function(e) {
-		    e.preventDefault();
-		    $('#about').animatescroll({scrollSpeed:2000,easing:'easeInOutCubic'});
-		});
-	  </script> -->
+	  <!-- <a href="/home#about"><span></span>Scroll</a> -->
 
 
 
-	
-	<!-- 
-	  <div id="seeProjects">
+
+	  <!-- <div id="seeProjects">
 	    <a href="#projects">
 	      <span>Please check out my projects!</span>
 	    </a>
-	  </div> -->
+	  </div>
+ -->
+
 	</div>
 
 <main>

@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit {
 
  // @HostBinding('style.height') height: Number;
 
-  projects: Project[];
+  projects: Project[] = [];
 
   constructor(private projectService: ProjectService) { }
 

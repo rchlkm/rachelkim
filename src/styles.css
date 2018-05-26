@@ -91,9 +91,11 @@ a {
 }
 
 main {
-	min-height: 92vh;
+	min-height: 50vh;
 	/*margin: auto 8rem;*/
 	margin: auto 10%;
+
+	border: 1px solid orange;
 }
 
 /* BIGGER DESKTOP */
