@@ -1,4 +1,8 @@
 /* ------------------------------------ */
+/* DISABLE LINK -- coming-soon -------- */
+document.getElementByClass("coming-soon").removeAttribute("href");
+
+/* ------------------------------------ */
 /* PORTFOLIO MIXITUP ------------------ */
 $(function () {
   

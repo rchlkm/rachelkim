@@ -68,3 +68,13 @@
 		/*border: 1px solid grey;*/
 	}
 
+
+
+
+.container.project-links {
+	/*margin: 1.5rem auto;	*/
+}
+
+a.project-links {
+	text-decoration: underline;
+}

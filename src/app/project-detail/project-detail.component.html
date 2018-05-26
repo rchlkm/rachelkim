@@ -1,7 +1,7 @@
 <div class="project-detail" *ngIf="project">
 	
-	<div class="container">
-		 <a (click)="goBack()" style="text-decoration: underline;">< Back to Projects</a>
+	<div class="container" style="margin-top: 1.5rem">
+		 < <a href="/projects" class="project-links">back to projects</a>
 	</div>
 
 	<div class="project intro">
@@ -60,9 +60,10 @@
 	</div></div>
 
 
+	<div class="container project-links" style="margin-bottom: 1.5rem">
+		 < <a href="/projects" class="project-links">back to projects</a> | <a href="" class="project-links">next</a> >
+	</div>
+
+	<!-- <a (click)="goBack()" >Go Back</a> -->
+
 </div>
-
-<!-- hello -->
-
-<!-- <button (click)="goBack()">go back</button> -->
-
