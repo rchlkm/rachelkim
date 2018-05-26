@@ -54,6 +54,19 @@ export const PROJECTS: Project[] = [
     color: "light-blue",
   },
 
+  {
+    id: "portfolio",
+    title: "My Portfolio",
+    category: "web",
+    status: "done",
+    duration: "May 2018",
+    type: "Personal",
+    role: "Developer + Designer",
+    description: "personal site to display my works",
+    tools: ["AngularJS"],
+    color: "navy",
+  },
+
   // {
   //   id: 4,
   //   title: "Big Historical Data",
