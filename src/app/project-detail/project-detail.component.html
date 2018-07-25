@@ -10,37 +10,48 @@
 				<h2 class="project-type">{{ project.type | uppercase }}</h2>
 				<h1 class="project-title">{{ project.title }}</h1>
 				<!-- <p class="overview">{{ project.overview }}</p> -->
-	
 				<p class="overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum at lacus vel posuere. Proin non neque imperdiet, venenatis lacus ut, ultrices metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 		</div></div>
 	</div>
 
 	<div class="project info">
 		<div class="content"><div class="container">
-				<div class="item">
-					<h4>Role</h4>
-					<span>{{ project.role }}</span>
-				</div>
+				<div class="row">
+					<div id="info-pic" class="col-8 info-col">
+						<img src="../assets/img/projects/project_main.png">
+					</div>
 
-				<div class="item">
-					<h4>Duration</h4>
-					<span>{{ project.duration }}</span><br>
-					<span>{{ project.type }}</span>
-				</div>
+					<div id="info-list" class="col-4 info-col">					
+						<div class="item">
+							<h4>Role</h4>
+							<span>{{ project.role }}</span><br>
+							<!-- <span>{{ project.role_description }}</span> -->
+						</div>
 
-				<div class="item">
-					<h4>Tools</h4>
-					<span>			
-						<ul *ngFor="let tool of tools">
-							<li>{{tool}}</li>
-						</ul>
-					</span>
-				</div>
+						<div class="item">
+							<h4>Timeframe</h4>
+							<span>{{ project.duration }}</span><br>
+						</div>
 
-				<div class="item">
-					<h4>Demo</h4>
-					<span>{{ project.link }}</span>
+						<div class="item">
+							<h4>Tools</h4>
+							<span>			
+								<ul *ngFor="let tool of tools">
+									<li>{{tool}}</li>
+								</ul>
+							</span>
+						</div>
+
+						<div class="item">
+							<!-- <h4>Demo</h4> -->
+							<!-- <span>{{ project.link }}</span> -->
+							<button onclick="'http://google.com'">
+								<h4>Live Demo</h4>
+							</button>
+						</div>
 				</div>
+			</div>
+
 		</div></div>
 	</div>
 
