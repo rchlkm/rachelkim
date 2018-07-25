@@ -3,14 +3,15 @@ import { Project } from './project';
 export const PROJECTS: Project[] = [
 
   {
-    id: "jemasen",
-    title: "Jemasen",
+    id: "janalytics",
+    title: "JAnalytics",
     category: "web data fav",
     status: "coming-soon",
     duration: "",
-    type: "cilent",
+    type: "client project",
     role: "Lead Developer, Data Analyst",
     description: "developing and maintaining data visualization dashboard",
+    overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum at lacus vel posuere. Proin non neque imperdiet, venenatis lacus ut, ultrices metus."
     tools: ["MongoDB", "D3", "Flask"],
     color: "navy",
   },

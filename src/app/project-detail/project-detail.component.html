@@ -1,19 +1,17 @@
 <div class="project-detail" *ngIf="project">
 	
-	<div class="container" style="margin-top: 1.5rem">
+	<!-- <div class="container" style="margin-top: 1.5rem">
 		 < <a href="/projects" class="project-links">back to projects</a>
-	</div>
+	</div> -->
 
-	<div class="project intro">
+	<div class="project intro page-start">
 		<div class="content"><div class="container">
-				<h1>{{ project.title | uppercase }}</h1>
-				<p>{{ project.description }}</p>
-
-				<div class="item">
-					<h4>Overiew</h4>
-					<!-- <span>{{ project.overview }}</span> -->
-					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum at lacus vel posuere. Proin non neque imperdiet, venenatis lacus ut, ultrices metus.</span>
-				</div>
+				<!-- <h1>{{ project.title | uppercase }}</h1> -->
+				<h2 class="project-type">{{ project.type | uppercase }}</h2>
+				<h1 class="project-title">{{ project.title }}</h1>
+				<!-- <p class="overview">{{ project.overview }}</p> -->
+	
+				<p class="overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum at lacus vel posuere. Proin non neque imperdiet, venenatis lacus ut, ultrices metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 		</div></div>
 	</div>
 

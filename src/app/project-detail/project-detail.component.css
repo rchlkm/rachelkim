@@ -4,25 +4,6 @@
 	/*border: 1px solid green;*/
 }
 
-	
-
-/*
-.item {
-	margin: 2rem 0;
-}
-	.item h4 {
-		text-transform: uppercase;
-		margin-bottom: 0.5rem;
-		font-weight: 200;
-	}
-
-	.item ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		padding-bottom: 0.2rem;
-	}
-*/
 
 .project {
 	width: 100%;
@@ -36,20 +17,34 @@
 		/*border: 1px solid purple;*/
 	}
 
+	
 
 	.project.intro {
-		min-height: 25vh;
+		min-height: 30vh;
 	}
-
-		.project.intro h1 {
-			font-size: 3.5rem;
-			letter-spacing: 0.3rem;
+		h2.project-type {
+			/*padding: 0.5rem;*/
+			color: grey;
+			font-weight: 300;
+			font-size: 1rem;
+		}
+		h1.project-title {
+			font-size: 4rem;
+			/*font-size: 3.5rem;*/
+			/*letter-spacing: 0.3rem;*/
+			/*padding:rem;*/
+			padding: 0.5rem 0 1rem 0;
 		}
 		
 		.project.intro p {
 			font-size: 1.25rem;
 			/*letter-spacing: 0.1rem;*/
 		}
+
+			.project.intro p.overview  {
+				width: 70%;
+				margin: auto;
+			}
 
 
 
