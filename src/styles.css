@@ -302,6 +302,9 @@ hr {
 	color: var(--magenta);
 }
 
+.center {
+	text-align: center;
+}
 
 
 

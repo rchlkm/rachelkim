@@ -21,7 +21,8 @@
 
 	.project.intro {
 		/*min-height: 25vh;*/
-	    padding: 2rem 0;
+	    /*padding: 2rem 0;*/
+	    padding: 2rem 0 1rem 0;
 
 	    /* DEVMODE */
 		/*border: 1px solid red;*/
@@ -55,8 +56,12 @@
 			}
 
 
+
+
+
 	.project.info {
 		min-height: 20vh;
+
 		/*background-color: #f5f5f5;*/
 		/*margin: 2rem;*/
 	}
@@ -77,27 +82,64 @@
 				width: 100%;
 				height: auto;
 			}
-		.project.info #info-list .item:first-child {
-			margin-top: 0;
+
+
+		.project.info #info-list {
+	
 		}
 
-		.project.info #info-list .item:last-child {
-			margin-bottom: 0;
+
+			.project.info #info-list button {
+				padding: 1rem;
+				width: 150px;
+				border-width: 2px;
+			}
+				.project.info #info-list button:hover {
+					/*text-decoration: underline;*/
+					background: rgba(0,0,0,0.8);
+					color: white;
+				}
+				.project.info #info-list button h4{
+					margin: 0;
+			}
+
+		@media only screen and (min-width: 975px) {
+			.project.info #info-list .item:first-child {
+				margin-top: 0;
+			}
+
+			.project.info #info-list .item:last-child {
+				margin-bottom: 0;
+			}
+		}	
+
+		/* TABLET (2 items per row) -- width: 96%; */
+		@media only screen and (max-width: 975px) {
+			
+			h1.project-title { font-size: 3rem; }
+			/*h2.project-type { font-size: 0.7rem; }*/
+
+			.project.info .info-col {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+
+			.project.info #info-list {
+				text-align: center;
+			}
+
 		}
 
-		.project.info #info-list button {
-			padding: 1rem;
-			width: 150px;
-			border-width: 2px;
+		/* MOBILE PHONE (1 item per row) --  width: 96%; */
+		@media only screen and (max-width: 600px) {
+
+			h1.project-title { font-size: 2.5rem; }
+			h2.project-type { font-size: 0.85rem; }
+			.project.intro p { font-size: 1rem; }
+
 		}
-			.project.info #info-list button:hover {
-				/*text-decoration: underline;*/
-				background: rgba(0,0,0,0.8);
-				color: white;
-			}
-			.project.info #info-list button h4{
-				margin: 0;
-			}
+
+
 
 	.project.main {
 		min-height: 60vh;
