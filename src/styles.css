@@ -257,6 +257,7 @@ html {
 
 	::selection {
 		background-color: var(--magenta);
+		/*background-color: #E64885;*/
 		color: white;
 	}
 
