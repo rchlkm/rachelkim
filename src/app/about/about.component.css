@@ -1,0 +1,13 @@
+
+#profile-pic {
+	width: auto;
+	display: inline-block;
+}
+	#about img {
+		width: 100%;
+		height: auto;	
+	}
+
+#about .profile-info {
+	padding: 0 2rem;
+}

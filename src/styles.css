@@ -18,6 +18,12 @@
 	--grey-bg: #f5f5f5;
 	--black-bg: #262626;
 
+	--orange: #FF5528;
+	--green: #1EBF64;  /*F85A3E*/
+	--lime: #8EEA24;
+	--purple: #9D1FB3;
+
+
   /*--breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -267,7 +273,8 @@ nav, footer {
 
 
 nav {
-	border-top: 5px var(--magenta) solid;
+	/*border-top: 5px var(--magenta) solid;*/
+	border-top: 8px var(--magenta) solid;
 	/*width: 100%;*/
 	/*border-bottom: 5px solid var(--magenta) !important;*/
 }
@@ -286,7 +293,7 @@ footer {
 
 
 #portfoliolist .portfolio.square {
-	background-color: #e8e8e8;
+	/*background-color: #e8e8e8;*/
 }
 
 a:hover, 

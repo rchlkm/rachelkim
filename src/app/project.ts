@@ -7,7 +7,7 @@ export class Project {
 	duration: string;
 	type: string
 	role: string;
-	role_description: string;
+	// role_description: string;
 	description: string;
 	overview;
 	tools: {};
