@@ -72,7 +72,7 @@ body {
 
 	/*max-width: 1500px;*/
 
-	border-bottom: 1px solid blue;
+	/*border-bottom: 1px solid blue;*/
 	margin: 0 auto !important;
 }
 
@@ -274,7 +274,7 @@ nav, footer {
 
 nav {
 	/*border-top: 5px var(--magenta) solid;*/
-	border-top: 8px var(--magenta) solid;
+	border-top: 6px var(--magenta) solid;
 	/*width: 100%;*/
 	/*border-bottom: 5px solid var(--magenta) !important;*/
 }
@@ -289,6 +289,7 @@ footer {
 	footer .footer-copyright {
 		/*background-color: var(--navy-dark);*/
 	}
+
 
 
 
@@ -361,22 +362,9 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-.page-start {
-	text-align: center;
-}
-
 #projects {
 	min-height: 80vh;
+	border-top: 1px solid #E1236E;
 }
 
 
@@ -386,3 +374,72 @@ main {
 	/* DEVMODE */
 	/*border: 1px solid blue !important;*/
 }
+
+
+
+
+/* INTRO -- landing, project detail */
+.intro {
+	text-align: center;
+	padding: 2rem 0 1rem 0;
+}
+
+	.intro-subtitle {
+
+	}
+		h2.intro-subtitle {
+			/*padding: 0.5rem;*/
+			color: grey;
+			font-weight: 300;
+			font-size: 1rem;
+		    letter-spacing: .1rem;
+		    text-transform: uppercase;
+		}
+
+	.intro-title {
+
+	}
+
+		h1.intro-title {
+				font-size: 4rem;
+				/*font-size: 3.5rem;*/
+				letter-spacing: 0.2rem;
+				/*padding:rem;*/
+				padding: 0.5rem 0 1rem 0;
+			}
+
+	.intro-overview {
+
+	}
+		p.intro-overview {
+				font-size: 1.25rem;
+				/*width: 70%;*/
+				margin: auto;
+		}	
+
+
+	/* TABLET (2 items per row) -- width: 96%; */
+	@media only screen and (max-width: 975px) {
+		
+		h1.intro-title { font-size: 3rem; }
+		/*h2.intro-subtitle { font-size: 0.7rem; }*/
+		p.intro-overview  { width: 80%; }
+
+	}
+
+	/* MOBILE PHONE (1 item per row) --  width: 96%; */
+	@media only screen and (max-width: 600px) {
+
+		h1.intro-title { font-size: 2.5rem; }
+		h2.intro-type { font-size: 0.85rem; }
+		p.intro-overview  { width: 90%; font-size: 1rem; }
+
+	}
+
+
+
+
+
+
+
+

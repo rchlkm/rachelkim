@@ -1,8 +1,4 @@
 #landing {
-	/*height: 100vh;*/
-	/*height: 90vh;*/
-	/*border-top: 4px #E1236E solid; */
-
 	display: block;
 	position: relative;
 	overflow-y: hidden;
@@ -14,14 +10,17 @@
 		height: 10vh;
 	}
 
+#landing .container {
+	/*height: 52vh;*/
+	/*margin: 3rem auto 1rem auto;*/
+	padding: 2rem 0 1rem 0;
 
+}
 
-
+/*
 #landing .container {
 	height: 52vh;
 	margin: 10vh auto 30vh;
-
-	/*border: 1px solid;*/
 }
 
 @media only screen and (min-width: 975px) and (max-width: 1200px) {  
@@ -43,7 +42,7 @@
 		height: 82vh;
 		margin: 5vh auto;
 	}
-}
+}*/
 
 div #hello {
 	font-size: 5rem;
@@ -57,9 +56,9 @@ div #hello {
 	}
 
 #landing h1 {
-	font-size: 3rem;
-	letter-spacing: 2.5px;
-	margin-bottom: 1rem;
+	/*font-size: 3rem;*/
+	/*letter-spacing: 2.5px;*/
+	/*margin-bottom: 1rem;*/
 }
 
 /*	#landing h1 span {
@@ -69,8 +68,8 @@ div #hello {
 	}*/
 
 #landing p {
-	font-size: 2rem;
-	line-height: 3.5rem;
+	font-size: 1.75rem;
+	line-height: 3rem;
 }
 
 #landing p span {
@@ -90,8 +89,8 @@ span#rachelkim {
 
 
 /* ---------------------------- */
-/* ABOUT ---------------------- */
-
+/* SCROLL FOR MORE ------------ */
+/*
 .scroll {
   position:relative;
   font-size:1.3em;
@@ -126,4 +125,4 @@ span#rachelkim {
   transform:rotate(45deg);
 
 }
-
+*/
