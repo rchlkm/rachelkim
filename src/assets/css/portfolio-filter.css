@@ -3,12 +3,13 @@
 #filters {
 	list-style:none;
 	padding-left: 0;
-	text-align: left;
 
+	text-align: left; /*center*/
 }
 
 	#filters li {
-		float:left;
+		display: inline-block;
+		float: none;
 	}	
 	
 	#filters li span {
