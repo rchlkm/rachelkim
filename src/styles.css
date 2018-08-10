@@ -210,6 +210,17 @@ div #navMenu {
 	margin-top: 10vh;
 }
 
+/* MOBILE PHONE */
+	@media only screen and (max-width: 450px) {
+		.navbar {
+			height: 8vh;
+			padding: 0;
+		}
+		#router-content {
+			margin-top: 8vh;
+		}
+	}
+
 /* ----------------------------- */
 /* FOOTER ---------------------- */
 footer {
