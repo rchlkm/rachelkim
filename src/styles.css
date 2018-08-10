@@ -45,6 +45,9 @@ html {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	min-width: 300px;
+
+	/*background-color: var(--magenta);*/
+
 	
 	/*height: 100%;*/
 	/*margin: 0 auto;*/
@@ -156,10 +159,12 @@ main {
 /* ----------------------------- */
 /* NAVBAR ---------------------- */
 .navbar {
-	height: 8vh;
+	height: 10vh;
 	/*width: 100%;*/
 	padding: 1rem 0;
-	/*overflow: hidden;*/
+	overflow: hidden;
+
+	/*border: 1px solid black;*/
 }
 	.sticky {
 	  position: fixed;
@@ -200,6 +205,10 @@ div #navMenu {
 	div#navMenu.navbar-menu.is-active .navbar-end {
 		margin: auto 4%;
 	}
+
+#router-content {
+	margin-top: 10vh;
+}
 
 /* ----------------------------- */
 /* FOOTER ---------------------- */
@@ -287,7 +296,7 @@ nav {
 footer {
 	/*background-color: rgba(225, 35, 110, 0.5);*/
 	/*color: white !important;*/
-	border-top: 1px solid var(--magenta) !important;
+	/*border-top: 1px solid var(--magenta) !important;*/
 }
 	footer .footer-copyright {
 		/*background-color: var(--navy-dark);*/
@@ -310,6 +319,10 @@ a:hover,
 	color: black;
 	/*cursor: url('assets/img/happy.png'), default;*/
 	/*cursor: select;*/
+}
+
+button {
+	cursor: pointer;
 }
 
 
@@ -375,8 +388,12 @@ main {
 
 #projects {
 	min-height: 80vh;
-	border-top: 1px solid #E1236E;
-	margin-bottom: 1%;
+
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: var(--magenta) !important;
+
+	padding-bottom: 1%;
 }
 
 
