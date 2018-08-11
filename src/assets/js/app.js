@@ -1,9 +1,10 @@
 /* ------------------------------------ */
 /* DISABLE LINK -- coming-soon -------- */
-document.getElementByClass("coming-soon").removeAttribute("href");
+// document.getElementByClass("coming-soon").removeAttribute("href");
 
 /* ------------------------------------ */
 /* PORTFOLIO MIXITUP ------------------ */
+/*
 $(function () {
   
   var filterList = {
@@ -25,9 +26,13 @@ $(function () {
   filterList.init(); // Run the show!
 }); 
 
+*/
+
 
 /* ------------------------------------ */
 /* STICKY NAVBAR ---------------------- */
+
+/*
 $(document).ready(function() {
   // grab the initial top offset of the navigation 
     var stickyNavTop = $('.navbar').offset().top;
@@ -51,14 +56,16 @@ $(document).ready(function() {
     stickyNav();
   });
 });
-
+*/
 
 /* ------------------------------------ */
 /* BULMA - navbar --------------------- */
 document.addEventListener('DOMContentLoaded', function () {
 
+  console.log('navbar!!!');
   // Get all "navbar-burger" elements
   var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  console.log(1,$navbarBurgers);
 
   // Check if there are any nav burgers
   if ($navbarBurgers.length > 0) {
@@ -84,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* ------------------------------------ */
 /* SCROLLIFY  ------------------------- */
+/*
 function openModal() {
       $.scrollify.disable();
       $('#projects').css('overflow-y','scroll');
@@ -99,5 +107,5 @@ $(function() {
   });
 });
 
-
+*/
 
