@@ -160,11 +160,7 @@ main {
 /* NAVBAR ---------------------- */
 .navbar {
 	max-height: 10vh;
-	/*width: 100%;*/
 	padding: 1rem 0;
-	/*overflow: hidden;*/
-
-	/*border: 1px solid black;*/
 }
 	.sticky {
 	  position: fixed;
@@ -172,28 +168,18 @@ main {
 	  left: 0;
 	  top: 0;
 	  z-index: 100;
-	  /*border-top: 0;*/
 	}
+
 	#router-content {
 		margin-top: 10vh;
 	}
 
-	/*.navbar > .is-active { 
-		overflow: visible;
-	 }*/
 
 div .navbar-brand {
 	font-size: 1.5rem;
 	font-weight: bold;
 }
 
-	.navbar-brand {
-		/*margin: -1rem;*/
-	}
-
-	.navbar-burger {
-		/*height: -50% !important;*/
-	}
 
 div #navMenu {
 	background-color: white;
@@ -201,7 +187,6 @@ div #navMenu {
 
 	div#navMenu.navbar-menu.is-active > a.navbar-item {
 		padding: 0.5rem 0;
-		/*padding: 0.5rem 1rem;*/
 	}
 
 	div#navMenu.navbar-menu.is-active {
@@ -213,8 +198,7 @@ div #navMenu {
 		margin: auto 4%;
 	}
 
-
-/* MOBILE PHONE */
+	/* MOBILE DEVICE */
 	@media only screen and (max-width: 450px) {
 		.navbar {
 			max-height: 8vh;
@@ -425,7 +409,8 @@ main {
 /* INTRO -- landing, project detail */
 .intro {
 	text-align: center;
-	padding: 2rem 0 1rem 0;
+	/*padding: 2rem 0 1rem 0;*/
+	/*padding: 1rem 0 2rem 0;*/
 }
 
 	.intro-subtitle {
